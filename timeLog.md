@@ -10,3 +10,5 @@
 | 9/12/22 | Created a project README to include project name and problem statement| .5 | |
 | 9/12/22 | Created cocktailApp timeLog.md and inserted first entries | .5 | |
 | 9/12/22 | Watched Indie Project Setup video | .75 | |
+| 9/12/22 | Week 2 Exercise | 7 | |
+| 9/13/22 | Completed Week 2 Exercise | 4 | |
