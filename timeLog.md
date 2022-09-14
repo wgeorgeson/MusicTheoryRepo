@@ -12,3 +12,4 @@
 | 9/12/22 | Watched Indie Project Setup video | .75 | |
 | 9/12/22 | Week 2 Exercise | 7 | |
 | 9/13/22 | Completed Week 2 Exercise | 4 | |
+| 9/13/22 | Watched 3 more Week 2 Ent Java videos | 1 | |
