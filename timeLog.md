@@ -21,3 +21,10 @@
 | 9/18/22 | Watched Week 3 Exercise Follow-up video | 1 | |
 | 9/19/22 | Completed Week 3 Exercise | 2 | |
 | 9/19/22 | Submitted Professional Dev. Project subject and presentation time | .5 | |
+| 9/22/22 | Watched some Week 4 Videos | 1.5 | |
+| 9/23/22 | Week 4 Readings | 1.5 | |
+| 9/23/22 | Began following Week 4 Demo | 2 | |
+| 9/24/22 | Week 4 Videos, Week 4 Demo | 2 | |
+| 9/25/22 | Week 4 Demo | 1.5 | |
+| 9/26/22 | Began Week 4 Exercise | 2.5 | |
+| 9/27/22 | Finished Week 4 Exercise | 3 | |
