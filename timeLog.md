@@ -28,3 +28,4 @@
 | 9/25/22 | Week 4 Demo | 1.5 | |
 | 9/26/22 | Began Week 4 Exercise | 2.5 | |
 | 9/27/22 | Finished Week 4 Exercise | 3 | |
+| 10/1/22 | Began Week 5 Videos | 3 | |
