@@ -20,7 +20,7 @@
 *	 [ ] Add log4j dependencies to pom.xml and log4j properties file
 *	[ ] Add Junit5 dependencies to pom.xml
 *	 [ ] Add Hibernate dependencies to pom.xml
-*	  [ ] Select Template | Design CSS
+* [ ] Select Template | Design CSS
 *	 [ ] new user jsp
 *	 [ ] add user controller java class
 *	 [ ] user entity java class
