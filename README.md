@@ -1,6 +1,6 @@
-# musicTheoryRepository
+# Basic Music Theory Repository
 
-This repository will contain all files for the musicTheoryRepository Individual Project, Enterprise Java Fall 2022.
+This repository will contain all files for the MusicTheoryRepository Individual Project, Enterprise Java Fall 2022.
 
 ### Problem Statement
 
