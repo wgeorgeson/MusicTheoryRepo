@@ -1,4 +1,4 @@
-# Basic Music Theory Repository
+# Bill Georgeson Individual Project - Basic Music Theory Repository
 
 This repository will contain all files for the MusicTheoryRepo Individual Project, Enterprise Java Fall 2022.
 
