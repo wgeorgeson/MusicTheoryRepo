@@ -34,3 +34,14 @@
 | 10/4/22 | Worked on Week 5 Exercise | 9 | |
 | 10/5/22 | Finished Up Week 5 Exercise | 8 | |
 | 10/4/22 | Finished on Week 5 Videos | 2 | |
+| 10/5/22 | Finished New Problem Statement for Indie Project | 1.25 | |
+| 10/6/22 | User Stories and Application Flow - Indie Project | 8 | |
+| 10/7/22 | Finished user stories, application flow - Indie Project | 1 |
+| 10/8/22 | Project Plan - Indie Project | 5 | |
+| 10/9/22| Project Plan - Indie Project | 4 | |
+| 10/10/22 | Project Plan - Indie Project | 2 | |
+| 10/11/22 | Finished Project Plan - Indie Project | 1 | |
+| 10/11/22 | Screen Designs - Indie Project | 3.5 | |
+| 10/12/22 | Finished screen designs - Indie Project | 2 | |
+| 10/12/22 | Reflection Statement - Week 1 | 2 | |
+| 10/12/22 | Renamed Indie Project, Posted Checkpoint 1 material to github | 2 | |
