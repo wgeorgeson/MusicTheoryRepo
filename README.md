@@ -1,10 +1,8 @@
-# cocktailApp
+# Bill Georgeson Individual Project 
 
-This repository will contain all files for the cocktailApp Individual Project, Enterprise Java Fall 2022.
+This repository will contain all files for the MusicTheoryRepo Individual Project, Enterprise Java Fall 2022.
 
 ### Problem Statement
 
-Bartenders, bar/tavern professionals, and public users can use a Web-based, centralized resource to quickly assist them in 
-the preparation of cocktails for customers and friends.  This application can help expedite this process by providing an 
-intuitive interface for quickly and easily searching for and locating useful drink recipes.    
+For musicians or anyone who has taken up introductory music theory, there are very few Internet resources that provide a centralized representation of basic music theory references, such as lists for music keys, key scales, key chords, modes, and relevant songs.  It would be a helpful learning tool for novice music theory enthusiasts to have a website/web app that serves as a comprehensive reference point for basic music theory information.  I would like to build a website, musictheoryrepository.com, that can satisfy those requirements.         
 
