@@ -34,13 +34,13 @@ For musicians or anyone who has taken up introductory music theory, there are ve
     * AWS Code Pipeline CI ???
 
 ### Project Docs
-[Problem Statement](https://github.com/wgeorgeson/MusicTheoryRepo/README.md)  
-[User Stories](https://github.com/wgeorgeson/MusicTheoryRepo/ProjectDocumentation/UserStories.md)  
-[Project Plan](https://github.com/wgeorgeson/MusicTheoryRepo/ProjectDocumentation/ProjectPlan.md)  
-[Application Flow](https://github.com/wgeorgeson/MusicTheoryRepo/ProjectDocumentation/ApplicationFlow.md)  
-[Screen Designs/Wireframes](https://github.com/wgeorgeson/MusicTheoryRepo/Wireframes/)  
-[Reflection Statements](https://github.com/wgeorgeson/MusicTheoryRepo/reflections.md)  
-[Timelog](https://github.com/wgeorgeson/MusicTheoryRepo/timeLog.md)
+[Problem Statement](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/README.md)  
+[User Stories](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/ProjectDocumentation/UserStories.md)  
+[Project Plan](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/ProjectDocumentation/ProjectPlan.md)  
+[Application Flow](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/ProjectDocumentation/ApplicationFlow.md)  
+[Screen Designs/Wireframes](https://github.com/wgeorgeson/MusicTheoryRepo/tree/master/ProjectDocumentation/Wireframes)  
+[Reflection Statements](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/reflections.md)  
+[Timelog](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/timeLog.md)
 
 
 
