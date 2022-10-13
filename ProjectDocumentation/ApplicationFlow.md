@@ -7,9 +7,9 @@
 5. Redirect to home page, with welcome message in nav menu for new user.
 
 ### User Sign In
-1.	User chooses sign in from the navigation menu (available on all pages, unless the user is signed in already), or from not being logged in and clicking one of the following options:
-      A.	‘Add Scale/Chord’ from the navigation menu
-      B.	‘View My Scales/Chords’ from the navigation menu
+1.	User chooses sign in from the navigation menu (available on all pages, unless the user is signed in already), or from not being logged in and clicking one of the following options:  
+      A.	‘Add Scale/Chord’ from the navigation menu  
+      B.	‘View My Scales/Chords’ from the navigation menu  
       C.	The link to add a scale or chord on the keyResults page
 2.	User enters username and password on form and submits.
 3.	If user is authenticated, user object is added to the attribute map.  The server will handle allowing access to the Add and View pages. JDBCRealm used for authentication (users, usersroles, and roles table).
