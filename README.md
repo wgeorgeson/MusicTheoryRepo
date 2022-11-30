@@ -8,8 +8,10 @@ For musicians or anyone who has taken up introductory music theory, there are ve
 
 ### Project Technologies
 * Server-side Language: Java
+* Web Application Server
+  * Apache Tomcat 8.5
 * Databases
-    * MySQL v8.0.22
+    * MySQL 8.0.22
 * Dependency and Task Management
     * Maven
 * IDE

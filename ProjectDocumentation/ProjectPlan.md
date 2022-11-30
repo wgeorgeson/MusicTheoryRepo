@@ -11,11 +11,11 @@
 *	 [ ] Write project plan
 *	 [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq?
 *	[ ] Develop screen designs
-*	 [ ] Triple-check for Checkpoint 1
-*	 [ ] Weekly reflection  
+*	 [ ] Triple-check for Checkpoint 1 
 
 ### Week 5
-*	 [ ] Create the application database
+*   [ ] Database Design Documentation
+*   [ ] Create the application database
 *	[ ] Create the User table
 *	 [ ] Add log4j dependencies to pom.xml and log4j properties file
 *	[ ] Add Junit5 dependencies to pom.xml
@@ -26,19 +26,23 @@
 *	 [ ] user entity java class
 *	 [ ] user DAO java class to add, update, or delete a user from the DB
 *	[ ] User daotest class
-*	 [ ] Weekly Reflection
 
 ### Week 6
 *	[ ] Work on Checkpoint 2 material
 *	[ ] Ability for user to create a user account, edit account information, update user database with new user data
 *	[ ] User DAO is fully functional
 *	[ ] User Dao Test class passes all tests
-*	 [ ] Weekly reflection
+
 
 ### Week 7
 *	[ ] Continue to work on Checkpoint 2 Material
 *	[ ] Push project repo out to github
-*	 [ ] Weekly Reflection
+
+
+### Week 14
+*	[ ] Finish Checkpoint 2
+*	[ ] Begin Checkpoint 3 material
+*   [ ] Finish Checkpoint 3
 
 ### Week 15
 *	 [ ] Final Presentation

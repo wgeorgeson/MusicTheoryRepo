@@ -54,3 +54,4 @@
 | 10/17/22 | Copied Week 7 Authentication business, controller classes, and cognito.properties to my Indie Project | .5 | |
 | 10/17/22 | Copied 3 Week 7 Authentication dependencies to pom.xml in my Indie Project | .25 | |
 | 10/17/22 | Added log4j properties file to Indie Project, adjusting for Hibernate | .25 | |
+| 11/29/22 | Checkpoint 2 Indie Project | | |
