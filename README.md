@@ -39,7 +39,7 @@ For musicians or anyone who has taken up introductory music theory, there are ve
 [Project Plan](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/ProjectDocumentation/ProjectPlan.md)  
 [Application Flow](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/ProjectDocumentation/ApplicationFlow.md)  
 [Screen Designs/Wireframes](https://github.com/wgeorgeson/MusicTheoryRepo/tree/master/ProjectDocumentation/Wireframes) 
-[Database Design](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/ProjectDocumentation/DatabaseDesign.pdf)
+[Database Design](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/ProjectDocumentation/DatabaseDiagram.pdf)
 [Reflection Statements](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/reflections.md)  
 [Timelog](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/timeLog.md)
 
