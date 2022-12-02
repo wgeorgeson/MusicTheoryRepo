@@ -3,14 +3,16 @@ package com.mtr.util;
 import java.io.IOException;
 import java.util.Properties;
 
-
 /**
  * This interface contains a default method that can be used anywhere a Properties
  * object is needed to be loaded.
+ *
+ * This app's Cognito set up is dependent on this class just the way it is
+ *
  * @author Eric Knapp
  *
  */
-public interface PropertiesLoader {
+public interface PropertiesLoader{
 
     /**
      * This default method will load a properties file into a Properties instance

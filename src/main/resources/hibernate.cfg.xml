@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="connection.url">jdbc:mysql://localhost:3306/MusicTheoryRepo</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">student</property>
+
+
+        <!-- AWS Beanstalk config - uncomment when in AWS Beanstalk, then comment out local config
+        <property name="connection.url">jdbc:mysql://awseb-e-xnth7vumxj-stack-awsebrdsdatabase-5acteipaqiu6.csr1ohs3dr0v.us-east-1.rds.amazonaws.com:3306/sample</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">student</property>
+        <property name="connection.password">student1</property>
+        -->
+
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+
+        <mapping class="com.mtr.entity.User"/>
+        <mapping class="com.mtr.entity.UserScale"/>
+        <mapping class="com.mtr.entity.UserChord"/>
+
+    </session-factory>
+</hibernate-configuration>
