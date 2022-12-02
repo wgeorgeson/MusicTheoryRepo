@@ -1,4 +1,4 @@
-package com.mtr.test.util;
+package com.mtr.persistence;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
