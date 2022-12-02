@@ -58,3 +58,4 @@
 | 11/29/22 | Checkpoint 2 Indie Project - Data Gathering and additional Application Flow considerations | 8.5 | |
 | 11/30/22 | Checkpoint 2 Indie Project - Data Gathering and additional Application Flow considerations | 6.5 | |
 | 12/1/22 | Checkpoint 2 Indie Project - Implemented Database, Test DB, Entity classes | 8.5 | |
+| 12/1/22 | Checkpoint 2 Indie Project - Requirements met | 2.5 | |
