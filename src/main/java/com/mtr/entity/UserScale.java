@@ -24,6 +24,7 @@ public class UserScale {
     private String scaleData;
 
     @ManyToOne
+    @JoinColumn(name="user_id", nullable=false)
     // Hibernate will map this User to the user_id field in the UserScales table for us
     private User user;
 

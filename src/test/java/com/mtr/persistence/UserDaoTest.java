@@ -44,7 +44,7 @@ class UserDaoTest {
      */
     @Test
     void getUsersByLastNameSuccess() {
-        List<User> users = dao.getUsersByLastName("p");  // users with "p" in their last name
+        List<User> users = dao.getUsersByLastName("l");  // users with "p" in their last name
         assertEquals( 2, users.size());
     }
 
