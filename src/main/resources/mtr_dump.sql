@@ -52,7 +52,7 @@ DROP TABLE IF EXISTS `keysMusic`;
 
 create table keysMusic
                (
-                 key_id int(2) NOT NULL auto_increment
+                 key_id int(2) NOT NULL
                    primary key,
                  key_name varchar(2) null,
                  constraint keysMusic_key_name_uindex

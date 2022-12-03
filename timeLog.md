@@ -59,3 +59,5 @@
 | 11/30/22 | Checkpoint 2 Indie Project - Data Gathering and additional Application Flow considerations | 6.5 | |
 | 12/1/22 | Checkpoint 2 Indie Project - Implemented Database, Test DB, Entity classes | 8.5 | |
 | 12/1/22 | Checkpoint 2 Indie Project - Requirements met | 2.5 | |
+| 12/2/22 | Created DAOs for UserScale and UserChord and successful unit test classes for those DAOs  | 4.5 | |
+| 12/3/22 | Added equals and hashCode methods to User,UserScale,UserChord entity classes for testing purposes  | .45 | |

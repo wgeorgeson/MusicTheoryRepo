@@ -3,6 +3,7 @@ package com.mtr.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * The type UserScale.
@@ -128,6 +129,26 @@ public class UserScale {
                 ", data ='" + scaleData + '\'' +
                 ", user =" + user +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        UserScale userScale = (UserScale) o;
+        // Order order = (Order) o;
+
+        return user_scale_id == userScale.user_scale_id
+                && scaleName.equals(userScale.scaleName)
+                && scaleData.equals(userScale.scaleData);
+        // return id == order.id && description.equals(order.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(user_scale_id, scaleName, scaleData);
+        // return Objects.hash(id, description);
     }
 }
 

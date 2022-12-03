@@ -19,7 +19,7 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "email")
+    // Do not have to provide a @Column annotation for email because the var name and column name are both named "email"
     private String email;
     @Column(name = "user_name")
     private String userName;
@@ -267,5 +267,20 @@ public class User {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return user_id == user.user_id
+                && firstName.equals(user.firstName)
+                && lastName.equals(user.lastName)
+                && userName.equals(user.userName)
+                && email.equals(user.email);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, userName, email, user_id);
+    }
 }

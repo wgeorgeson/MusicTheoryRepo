@@ -3,6 +3,7 @@ package com.mtr.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * The type UserChord.
@@ -150,6 +151,22 @@ public class UserChord {
                 ", data ='" + chordData + '\'' +
                 ", user =" + user +
                 '}';
+    }
+
+
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserChord userChord = (UserChord) o;
+        return user_chord_id == userChord.user_chord_id
+                && chordCategory.equals(userChord.chordCategory)
+                && chordName.equals(userChord.chordName)
+                && chordData.equals(userChord.chordData);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(user_chord_id, chordCategory, chordName, chordData);
     }
 }
 
