@@ -1,1 +1,110 @@
-[DEBUG] 2022-12-03 02:21:17.466 [main] UserChordDao - Searching for: E
+[DEBUG] 2022-12-04 22:41:03.989 [main] KeyScaleDao - Searching for scales in the key of: B♭
+[DEBUG] 2022-12-04 22:57:18.881 [main] KeyScaleDao - Searching for scales in the key of: B♭
+[DEBUG] 2022-12-04 22:57:44.692 [main] KeyScaleDao - Searching for scales in the key of: B♭
+[DEBUG] 2022-12-04 22:59:33.539 [main] KeyScaleDao - Searching for scales in the key of: B♭
+[INFO ] 2022-12-04 22:59:34.449 [main] KeyScaleDao - [KeyScale {id = 29, scale name ='Bb Major (Bb Ionian)', scale data ='B♭ C D E♭ F G A', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 30, scale name ='Bb Dorian', scale data ='Bb C Db Eb F G Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 31, scale name ='Bb Phrygian', scale data ='Bb Cb Db Eb F Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 32, scale name ='Bb Lydian', scale data ='Bb C D E F G A', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 33, scale name ='Bb Mixolydian', scale data ='Bb C D Eb F G Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 34, scale name ='Bb Aeolian', scale data ='Bb C Db Eb F Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 35, scale name ='Bb Locrian', scale data ='Bb Cb Db Eb Fb Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 36, scale name ='Bb Minor', scale data ='Bb C Db Eb F Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 37, scale name ='Bb Harmonic Minor', scale data ='B♭ C D♭ E♭ F G♭ A♭', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 38, scale name ='Bb Melodic Minor', scale data ='B♭ C D♭ E♭ F G♭ A♭', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 39, scale name ='Bb Major Pentatonic', scale data ='Bb C D F G', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 40, scale name ='Bb Blues Scale', scale data ='Bb C Db D F G', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 41, scale name ='Bb Minor Pentatonic', scale data ='Bb Db Eb F Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}, KeyScale {id = 42, scale name ='Relative Minor', scale data ='G A Bb C D Eb F', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}]
+[DEBUG] 2022-12-04 23:02:42.824 [main] KeyScaleDao - Searching for scales in the key of: B♭
+[INFO ] 2022-12-04 23:02:43.879 [main] KeyScaleDao - KeyScale {id = 29, scale name ='Bb Major (Bb Ionian)', scale data ='B♭ C D E♭ F G A', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 30, scale name ='Bb Dorian', scale data ='Bb C Db Eb F G Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 31, scale name ='Bb Phrygian', scale data ='Bb Cb Db Eb F Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 32, scale name ='Bb Lydian', scale data ='Bb C D E F G A', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 33, scale name ='Bb Mixolydian', scale data ='Bb C D Eb F G Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 34, scale name ='Bb Aeolian', scale data ='Bb C Db Eb F Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 35, scale name ='Bb Locrian', scale data ='Bb Cb Db Eb Fb Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 36, scale name ='Bb Minor', scale data ='Bb C Db Eb F Gb Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 37, scale name ='Bb Harmonic Minor', scale data ='B♭ C D♭ E♭ F G♭ A♭', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 38, scale name ='Bb Melodic Minor', scale data ='B♭ C D♭ E♭ F G♭ A♭', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 39, scale name ='Bb Major Pentatonic', scale data ='Bb C D F G', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 40, scale name ='Bb Blues Scale', scale data ='Bb C Db D F G', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 41, scale name ='Bb Minor Pentatonic', scale data ='Bb Db Eb F Ab', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[INFO ] 2022-12-04 23:02:43.880 [main] KeyScaleDao - KeyScale {id = 42, scale name ='Relative Minor', scale data ='G A Bb C D Eb F', KeysMusic = KeysMusic{KeyID ='9', KeyName='B♭'}}
+
+[DEBUG] 2022-12-05 02:10:33.464 [main] KeyChordDao - Searching for: Seventh
+[DEBUG] 2022-12-05 02:15:08.298 [main] KeyChordDao - Searching for: Seventh
+[DEBUG] 2022-12-05 02:15:56.111 [main] KeyChordDao - Searching for: sus2
+[DEBUG] 2022-12-05 02:16:15.936 [main] KeyChordDao - Searching for chords in the key of: C
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 1, chord name ='C Major', chord data ='C E G', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 2, chord name ='C Minor', chord data ='C E♭ G', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 3, chord name ='C Diminish', chord data ='C Eb Gb', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 4, chord name ='C Augmente', chord data ='C E G#', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 5, chord name ='C sus2', chord data ='C D G', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 6, chord name ='C sus4', chord data ='C F G', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 7, chord name ='C6', chord data ='C E A', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 8, chord name ='C Major', chord data ='C E G', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 9, chord name ='D Minor', chord data ='D F A', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 10, chord name ='E Minor', chord data ='E G B', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 11, chord name ='F Major', chord data ='F A C', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 12, chord name ='G Major', chord data ='G B D', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 13, chord name ='A Minor', chord data ='A C E', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 14, chord name ='B Diminish', chord data ='B D F', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 15, chord name ='C Minor', chord data ='C Eb G', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 16, chord name ='D Diminish', chord data ='D Fb Ab', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 17, chord name ='Eb Major', chord data ='Eb G Bb', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 18, chord name ='F Minor', chord data ='F Ab C', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 19, chord name ='G Minor', chord data ='G Bb D', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 20, chord name ='Ab Major', chord data ='Ab C E', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 21, chord name ='Bb Major', chord data ='Bb D F', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 22, chord name ='C Maj7', chord data ='C E G B', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 23, chord name ='Dm7', chord data ='D F A C', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 24, chord name ='Em7', chord data ='E G B D', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 25, chord name ='F Maj7', chord data ='F A C E', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 26, chord name ='G7', chord data ='G B D F', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 27, chord name ='Am7', chord data ='A C E G', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 28, chord name ='Bm7♭5', chord data ='B D F A', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[INFO ] 2022-12-05 02:16:17.336 [main] KeyChordDao - KeyChord {id = 45, chord name ='Bb Major', chord data ='Bb D F', KeysMusic = KeysMusic{KeyID ='1', KeyName='C'}}
+
+[DEBUG] 2022-12-05 02:42:47.169 [main] SongDao - Searching for: Purple Rain
+[DEBUG] 2022-12-05 02:43:01.171 [main] SongDao - Searching for: Elton John
+[DEBUG] 2022-12-05 02:44:06.743 [main] SongDao - Searching for: Elton John
+[DEBUG] 2022-12-05 02:44:23.755 [main] SongDao - Searching for chords in the key of: G
+[INFO ] 2022-12-05 02:44:25.073 [main] SongDao - Song {id = 6, Song name ='Wish You Were Here', Song artist ='Pink Floyd', KeysMusic = KeysMusic{KeyID ='2', KeyName='G'}}
+
+[INFO ] 2022-12-05 02:44:25.073 [main] SongDao - Song {id = 7, Song name ='Come As You Are', Song artist ='Nirvana', KeysMusic = KeysMusic{KeyID ='2', KeyName='G'}}
+
+[INFO ] 2022-12-05 02:44:25.073 [main] SongDao - Song {id = 8, Song name ='Sweet Home Alabama', Song artist ='Lynyrd Skynyrd', KeysMusic = KeysMusic{KeyID ='2', KeyName='G'}}
+
+[INFO ] 2022-12-05 02:44:25.073 [main] SongDao - Song {id = 9, Song name ='Good Riddance', Song artist ='Green Day', KeysMusic = KeysMusic{KeyID ='2', KeyName='G'}}
+
+[INFO ] 2022-12-05 02:44:25.073 [main] SongDao - Song {id = 10, Song name ='Blackbird', Song artist ='The Beatles', KeysMusic = KeysMusic{KeyID ='2', KeyName='G'}}
+

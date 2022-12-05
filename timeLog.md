@@ -51,7 +51,7 @@
 | 10/15/22 | Week 7 Videos                                                          | 1.5 | |
 | 10/16/22 | Authentication With AWS Cognito Activity                               | 2 | |
 | 10/17/22 | Week 7 Exercise                                                        | .5 | |
-| 10/17/22 | Copied Week 7 Authentication business, controller classes, and cognito.properties to my Indie Project | .5 | |
+| 10/17/22 | Copied Week 7 Authentication business, controller clasjses, and cognito.properties to my Indie Project | .5 | |
 | 10/17/22 | Copied 3 Week 7 Authentication dependencies to pom.xml in my Indie Project | .25 | |
 | 10/17/22 | Added log4j properties file to Indie Project, adjusting for Hibernate | .25 | |
 | 11/29/22 | Checkpoint 2 Indie Project - Database Design | 2 | |
@@ -61,3 +61,4 @@
 | 12/1/22 | Checkpoint 2 Indie Project - Requirements met | 2.5 | |
 | 12/2/22 | Created DAOs for UserScale and UserChord and successful unit test classes for those DAOs  | 4.5 | |
 | 12/3/22 | Added equals and hashCode methods to User,UserScale,UserChord entity classes for testing purposes  | .45 | |
+| 12/4/22 | Finished adding all entities, entity DAO classes, and all DAO Unit Test classes.  All tests pass.  | 8.5 | |

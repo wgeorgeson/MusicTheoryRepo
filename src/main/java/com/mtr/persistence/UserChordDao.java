@@ -35,7 +35,7 @@ public class UserChordDao {
         CriteriaQuery<UserChord> query = builder.createQuery(UserChord.class);
         // The following stmt is like the sql FROM portion of our query
         Root<UserChord> root = query.from(UserChord.class);
-        // The following stmt will allow us to run the query, returning a list of users
+        // The following stmt will allow us to run the query, returning a list of UserChord objects
         List<UserChord> userChords = session.createQuery(query).getResultList();
         // Close the session
         session.close();

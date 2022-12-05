@@ -3,7 +3,6 @@ package com.mtr.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.time.*;  // LocalDate, Period
 import java.util.*;
 
 /**
@@ -161,7 +160,7 @@ public class User {
     }
 
     /**
-     * Gets userId.
+     * Gets user_Id.
      *
      * @return the userId
      */

@@ -8,48 +8,59 @@
 * [ ] Create Project Plan
 * [ ] Determine possible Web Services or APIs to use
 * [ ] List technologies, versions and how they will be used
-*	 [ ] Write project plan
-*	 [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq?
-*	[ ] Develop screen designs
-*	 [ ] Triple-check for Checkpoint 1 
+* [ ] Write project plan
+* [ ] Document application flow in text 
+* [ ] Develop screen designs - Balsamiq
+* [ ] Triple-check for Checkpoint 1 
 
 ### Week 5
 *   [ ] Database Design Documentation
 *   [ ] Create the application database
 *	[ ] Create the User table
-*	 [ ] Add log4j dependencies to pom.xml and log4j properties file
+*   [ ] Add log4j dependencies to pom.xml and log4j properties file
 *	[ ] Add Junit5 dependencies to pom.xml
-*	 [ ] Add Hibernate dependencies to pom.xml
-* [ ] Select Template | Design CSS
-*	 [ ] new user jsp
-*	 [ ] add user controller java class
-*	 [ ] user entity java class
-*	 [ ] user DAO java class to add, update, or delete a user from the DB
-*	[ ] User daotest class
+*   [ ] Add Hibernate dependencies to pom.xml
 
 ### Week 6
 *	[ ] Work on Checkpoint 2 material
-*	[ ] Ability for user to create a user account, edit account information, update user database with new user data
-*	[ ] User DAO is fully functional
-*	[ ] User Dao Test class passes all tests
-
+*	[ ] Insert some data to application database
+*   [ ] Create a test database
+*   [ ] Insert test data into test DB
 
 ### Week 7
 *	[ ] Continue to work on Checkpoint 2 Material
-*	[ ] Push project repo out to github
-
 
 ### Week 14
-*	[ ] Finish Checkpoint 2
-*	[ ] Begin Checkpoint 3 material
-*   [ ] Finish Checkpoint 3
+*	[ ] Continue Checkpoint 2
+*   [ ] Add all Entity classes
+*   [ ] Add all DAO classes for each Entity class
+*   [ ] JUnit Unit Testing classes for each DAO
 
 ### Week 15
+*    [ ] Select Template | Design CSS - Bootstrap
+*    [ ] Navigation Bars, Include statements
+*    [ ] index.jsp & Servlet
+*    [ ] index.jsp Servlet
+*    [ ] viewKeyResults JSP & Servlet
+*    [ ] addUserScalesChords JSP & Servlet
+*    [ ] viewUserScalesChords JSP & Servlet
+     [ ] Begin Checkpoint 3
+*    [ ] Deploy to AWS Beanstalk
+*    [ ] Cognito authentication
+*    [ ] Peer Review
+*    [ ] LogIn JSP & Servlet
+*    [ ] SignIn JSP & Servlet
+*    [ ] changePassword JSP & Servlet
+*    [ ] changeUserInfo JSP & Servlet
+*    [ ] Ensure that proper Navigation is displayed for each page
+*    [ ] Finish loading all data into production DB
+*    [ ] Code quality check
+*    [ ] Add any missing JavaDocs/Documentation
 *	 [ ] Final Presentation
 *	 [ ] Create video, add video link to readme.md
-*	 [ ] Finalize all documentation
-*	 [ ] Code quality check
 
 ### Week 16
+*    [ ] Self-evaluation
 *	 [ ] Weekly journal entry
-*	 [ ] Final touches before code complete
+*    [ ] Finalize all project documentation
+*    [ ] Update Project Plan and timeLog 

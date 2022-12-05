@@ -35,7 +35,7 @@ public class UserScaleDao {
         CriteriaQuery<UserScale> query = builder.createQuery(UserScale.class);
         // The following stmt is like the sql FROM portion of our query
         Root<UserScale> root = query.from(UserScale.class);
-        // The following stmt will allow us to run the query, returning a list of users
+        // The following stmt will allow us to run the query, returning a list of UserScale objects
         List<UserScale> userScales = session.createQuery(query).getResultList();
         // Close the session
         session.close();

@@ -29,7 +29,7 @@ public class UserChord {
 
     @ManyToOne
     @JoinColumn(name="user_id", nullable=false)
-    // Hibernate will map this User to the user_id field in the UserChords table for us
+    // Hibernate will map this User to the user_id field in the UserChords table
     private User user;
 
     /**

@@ -28,5 +28,10 @@
         <mapping class="com.mtr.entity.UserScale"/>
         <mapping class="com.mtr.entity.UserChord"/>
 
+        <mapping class="com.mtr.entity.KeysMusic"/>
+        <mapping class="com.mtr.entity.KeyScale"/>
+        <mapping class="com.mtr.entity.KeyChord"/>
+        <mapping class="com.mtr.entity.Song"/>
+
     </session-factory>
 </hibernate-configuration>
