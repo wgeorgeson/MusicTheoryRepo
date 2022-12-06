@@ -44,22 +44,24 @@
 *    [ ] viewKeyResults JSP & Servlet
 *    [ ] addUserScalesChords JSP & Servlet
 *    [ ] viewUserScalesChords JSP & Servlet
-     [ ] Begin Checkpoint 3
-*    [ ] Deploy to AWS Beanstalk
-*    [ ] Cognito authentication
 *    [ ] Peer Review
 *    [ ] LogIn JSP & Servlet
 *    [ ] SignIn JSP & Servlet
 *    [ ] changePassword JSP & Servlet
 *    [ ] changeUserInfo JSP & Servlet
+*    [ ] Begin Checkpoint 3
+*    [ ] Deploy to AWS Beanstalk
+*    [ ] Cognito authentication
+*    [ ] Form Validation - Javascript
+*    [ ] Incorporate API data into viewKeyResults jsp
 *    [ ] Ensure that proper Navigation is displayed for each page
 *    [ ] Finish loading all data into production DB
+
+### Week 16
 *    [ ] Code quality check
 *    [ ] Add any missing JavaDocs/Documentation
 *	 [ ] Final Presentation
 *	 [ ] Create video, add video link to readme.md
-
-### Week 16
 *    [ ] Self-evaluation
 *	 [ ] Weekly journal entry
 *    [ ] Finalize all project documentation
