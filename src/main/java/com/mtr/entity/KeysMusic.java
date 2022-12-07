@@ -86,7 +86,6 @@ public class KeysMusic {
         this.keyName = keyName;
     }
 
-
     public Set<KeyScale> getKeyScales() {
         return keyScales;
     }

@@ -7,9 +7,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -33,14 +31,14 @@ public class ViewKeyResults extends HttpServlet {
         List<KeyChord> keyChords = keyChordDao.getKeyChordsByKeyName(chosenKey);
         List<Song> songs = songDao.getSongsByKey(chosenKey);
 
+        System.out.println("Chosen key: " + chosenKey + ", Scales: " + keyScales);
+        System.out.println("Chosen key: " + chosenKey + ", Chords: " + keyChords);
+        System.out.println("Chosen key: " + chosenKey + ", Songs: " + songs);
+
         request.setAttribute("chosenKey", chosenKey);
-
-        Map<String, List> keyMap = new HashMap<>();
-        keyMap.put("scales", keyScales);
-        keyMap.put("chords", keyChords);
-        keyMap.put("songs", songs);
-
-        request.setAttribute("keyMap", keyMap);
+        request.setAttribute("scales", keyScales);
+        request.setAttribute("chords", keyChords);
+        request.setAttribute("songs", songs);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/keyResults.jsp");
         dispatcher.forward(request, response);

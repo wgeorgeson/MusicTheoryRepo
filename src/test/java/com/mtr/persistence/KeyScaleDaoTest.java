@@ -33,18 +33,18 @@ class KeyScaleDaoTest {
         List<KeyScale> keyScales = keyScaleDao.getAllKeyScales();
         // We want to know the number of keyScales that should be returned
         // Double-click on test_MusicTheoryRepo->tables->keyScales in Database pane to view the no. of keyScales in keyScales table
-        assertEquals(42, keyScales.size());
+        assertEquals(56, keyScales.size());
     }
 
     @Test
     void getKeyScalesByNameSuccess() {
         List<KeyScale> keyScales = keyScaleDao.getKeyScalesByName("Dorian");
-        assertEquals( 3, keyScales.size());
+        assertEquals( 4, keyScales.size());
     }
 
     @Test
     void getKeyScalesByKeyNameSuccess() {
-        List<KeyScale> keyScales = keyScaleDao.getKeyScalesByKeyName("B♭");
+        List<KeyScale> keyScales = keyScaleDao.getKeyScalesByKeyName("Bb");
         assertEquals( 14, keyScales.size());
     }
 }

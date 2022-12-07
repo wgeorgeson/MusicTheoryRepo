@@ -62,3 +62,6 @@
 | 12/2/22 | Created DAOs for UserScale and UserChord and successful unit test classes for those DAOs  | 4.5 | |
 | 12/3/22 | Added equals and hashCode methods to User,UserScale,UserChord entity classes for testing purposes  | .45 | |
 | 12/4/22 | Finished adding all entities, entity DAO classes, and all DAO Unit Test classes.  All tests pass.  | 8.5 | |
+| 12/5/22 | Implementation of index JSP and keyResultsJSP, as well as the ViewKeyResults servlet.  | 10 | |
+| 12/6/22 | Continued implementation of index JSP and keyResultsJSP, as well as the ViewKeyResults servlet.  | 10.5 | |
+| 12/6/22 | HTML/Bootstrap layout for addUserScalesChords JSP.  | 13 | |

@@ -1,5 +1,5 @@
 <!-- Footer start -->
-<div class="container-fluid fixed-bottom p-3 bg-warning text-black text-center">
+<div class="container-fluid p-2 bg-warning fixed-bottom text-black text-center border border-dark">
     <h6>Music Theory Repository</h6>
     <p>&#169; 2022</p>
 </div>

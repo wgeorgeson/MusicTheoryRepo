@@ -84,11 +84,11 @@ public class SongDao {
     /**
      * Gets a List of songs by key
      *
-     * @param key the key name
+     * @param keyName the key name
      * @return the List of songs
      */
-    public List<Song> getSongsByKey(String key) {
-        logger.debug("Searching for chords in the key of: {}", key);
+    public List<Song> getSongsByKey(String keyName) {
+        logger.debug("Searching for songs in the key of: {}", keyName);
         Session session = sessionFactory.openSession();
         /*
          *  SELECT * FROM Song WHERE KeysMusic.key_id = Song.key_id
@@ -99,14 +99,9 @@ public class SongDao {
         Root<Song> root = query.from(Song.class);
         Path<KeysMusic> propertyPath = root.get("keysMusic");
         query.where(builder.and(
-                builder.equal(propertyPath.get("keyName"), key)));
+                builder.equal(propertyPath.get("keyName"), keyName)));
         List<Song> songs = session.createQuery(query).getResultList();
         session.close();
-
-        for (Song song : songs) {
-            logger.info(song + "\n");
-        }
-
         return songs;
     }
 }

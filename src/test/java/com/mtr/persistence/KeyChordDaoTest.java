@@ -32,24 +32,24 @@ class KeyChordDaoTest {
         List<KeyChord> keyChords = keyChordDao.getAllKeyChords();
         // We want to know the number of keyChords that should be returned
         // Double-click on test_MusicTheoryRepo->tables->keyChords in Database pane to view the no. of keyChords in keyChords table
-        assertEquals(84, keyChords.size());
+        assertEquals(112, keyChords.size());
     }
 
     @Test
     void getKeyChordsByCategorySuccess() {
         List<KeyChord> keyChords = keyChordDao.getKeyChordsByCategory("Seventh");
-        assertEquals( 21, keyChords.size());
+        assertEquals( 28, keyChords.size());
     }
 
     @Test
     void getKeyChordsByNameSuccess() {
         List<KeyChord> keyChords = keyChordDao.getKeyChordsByName("sus2");  // any chord with "sus2" in it
-        assertEquals( 3, keyChords.size());
+        assertEquals( 4, keyChords.size());
     }
 
     @Test
     void getKeyChordsByKeyNameSuccess() {
-        List<KeyChord> keyChords = keyChordDao.getKeyChordsByKeyName("C");
-        assertEquals( 29, keyChords.size());
+        List<KeyChord> keyChords = keyChordDao.getKeyChordsByKeyName("Bb");
+        assertEquals( 28, keyChords.size());
     }
 }

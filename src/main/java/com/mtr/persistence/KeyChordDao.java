@@ -102,9 +102,10 @@ public class KeyChordDao {
         List<KeyChord> keyChords = session.createQuery(query).getResultList();
         session.close();
 
+        /*
         for (KeyChord keyChord: keyChords) {
             logger.info(keyChord + "\n");
-        }
+        } */
 
         return keyChords;
     }

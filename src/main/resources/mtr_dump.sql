@@ -54,14 +54,14 @@ create table keysMusic
                (
                  key_id int(2) NOT NULL
                    primary key,
-                 key_name varchar(2) null,
+                 key_name varchar(3) null,
                  constraint keysMusic_key_name_uindex
                  unique (key_name)
                );
                
 LOCK TABLES `keysMusic` WRITE;
 /*!40000 ALTER TABLE `keysMusic` DISABLE KEYS */;
-INSERT INTO `keysMusic` VALUES (1,'C'),(2,'G'),(3,'D'),(4,'A'),(5,'E'),(6,'B'),(7,'C#'),(8,'F#'),(9,'B♭'),(10,'E♭'),(11,'A♭'),(12,'D♭'),(13,'G♭'),(14,'C♭'),(15,'F');
+INSERT INTO `keysMusic` VALUES (1,'C'),(2,'G'),(3,'D'),(4,'A'),(5,'E'),(6,'B'),(7,'C#'),(8,'F#'),(9,'Bb'),(10,'Eb'),(11,'Ab'),(12,'Db'),(13,'Gb'),(14,'Cb'),(15,'F');
 /*!40000 ALTER TABLE `keysMusic` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,6 +97,10 @@ INSERT INTO `keyScales` VALUES (25,'G Major Pentatonic', 'G A B D E', 2),(26,'G 
 INSERT INTO `keyScales` VALUES (29,'Bb Major (Bb Ionian)', 'B♭ C D E♭ F G A', 9),(30,'Bb Dorian','Bb C Db Eb F G Ab',9),(31,'Bb Phrygian', 'Bb Cb Db Eb F Gb Ab',9),(32,'Bb Lydian','Bb C D E F G A',9),(33,'Bb Mixolydian', 'Bb C D Eb F G Ab',9);
 INSERT INTO `keyScales` VALUES (34,'Bb Aeolian', 'Bb C Db Eb F Gb Ab', 9),(35,'Bb Locrian','Bb Cb Db Eb Fb Gb Ab',9),(36,'Bb Minor', 'Bb C Db Eb F Gb Ab',9),(37,'Bb Harmonic Minor','B♭ C D♭ E♭ F G♭ A♭',9),(38,'Bb Melodic Minor', 'B♭ C D♭ E♭ F G♭ A♭',9);
 INSERT INTO `keyScales` VALUES (39,'Bb Major Pentatonic', 'Bb C D F G', 9),(40,'Bb Blues Scale','Bb C Db D F G', 9),(41,'Bb Minor Pentatonic', 'Bb Db Eb F Ab',9),(42,'Relative Minor','G A Bb C D Eb F',9);
+
+INSERT INTO `keyScales` VALUES (85,'C# Major (Bb Ionian)', 'B♭ C D E♭ F G A', 7),(86,'C# Dorian','Bb C Db Eb F G Ab',7),(87,'#C Phrygian', 'Bb Cb Db Eb F Gb Ab',7),(88,'C# Lydian','Bb C D E F G A',7),(89,'C# Mixolydian', 'C# C D Eb F G Ab',7);
+INSERT INTO `keyScales` VALUES (90,'C# Aeolian', 'C# C Db Eb F Gb Ab', 7),(91,'C# Locrian','C# Cb Db Eb Fb Gb Ab',7),(92,'C# Minor', 'C# C Db Eb F Gb Ab',7),(93,'C# Harmonic Minor','C# C D♭ E♭ F G♭ A♭',7),(94,'C# Melodic Minor', 'C# C D♭ E♭ F G♭ A♭',7);
+INSERT INTO `keyScales` VALUES (95,'C# Major Pentatonic', 'C# C D F G', 7),(96,'C# Blues Scale','C# C Db D F G', 7),(97,'C# Minor Pentatonic', 'C# Db Eb F Ab',7),(98,'Relative Minor','C# A Bb C D Eb F',7);
 /*!40000 ALTER TABLE `keyScales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -122,7 +126,7 @@ create table keyChords
 
 LOCK TABLES `keyChords` WRITE;
 /*!40000 ALTER TABLE `keyChords` DISABLE KEYS */;
-INSERT INTO `keyChords` VALUES (1,'Triads','C Major','C E G',1),(2,'Triads','C Minor','C E♭ G',1),(3,'Triads','C Diminished','C Eb Gb',1),(4,'Triad','C Augmented','C E G#',1),(5,'Common','C sus2','C D G',1),(6,'Common','C sus4','C F G',1),(7,'Common','C6','C E A',1);
+INSERT INTO `keyChords` VALUES (1,'Triads','C Major','C E G',1),(2,'Triads','C Minor','C E♭ G',1),(3,'Triads','C Diminished','C Eb Gb',1),(4,'Triads','C Augmented','C E G#',1),(5,'Common','C sus2','C D G',1),(6,'Common','C sus4','C F G',1),(7,'Common','C6','C E A',1);
 INSERT INTO `keyChords` VALUES (8,'Major','C Major','C E G',1),(9,'Major','D Minor','D F A',1),(10,'Major','E Minor','E G B',1),(11,'Major','F Major','F A C',1),(12,'Major','G Major','G B D',1),(13,'Major','A Minor','A C E',1),(14,'Major','B Diminished','B D F',1);
 INSERT INTO `keyChords` VALUES (15,'Minor','C Minor','C Eb G',1),(16,'Minor','D Diminished','D Fb Ab',1),(17,'Minor','Eb Major','Eb G Bb',1),(18,'Minor','F Minor','F Ab C',1),(19,'Minor','G Minor','G Bb D',1),(20,'Minor','Ab Major','Ab C E',1),(21,'Minor','Bb Major','Bb D F',1);
 INSERT INTO `keyChords` VALUES (22,'Seventh','C Maj7','C E G B',1),(23,'Seventh','Dm7','D F A C',1),(24,'Seventh','Em7','E G B D',1),(25,'Seventh','F Maj7','F A C E',1),(26,'Seventh','G7','G B D F',1),(27,'Seventh','Am7','A C E G',1),(28,'Seventh','Bm7♭5','B D F A',1);
@@ -136,6 +140,11 @@ INSERT INTO `keyChords` VALUES (57,'Triads','Bb Major','Bb D F',9),(58,'Triads',
 INSERT INTO `keyChords` VALUES (64,'Major','Bb Major','Bb D F',9),(65,'Major','C Minor','C Eb G',9),(66,'Major','D Minor','D F A',9),(67,'Major','Eb Major','Eb G Bb',9),(68,'Major','F Major','F A C',9),(69,'Major','G Minor','G Bb D',9),(70,'Major','A Diminished','A C Eb',9);
 INSERT INTO `keyChords` VALUES (71,'Minor','Bb Minor','Bb Db F',9),(72,'Minor','C Diminished','C Eb Gb',9),(73,'Minor','Db Major','Db F Ab',9),(74,'Minor','Eb Minor','Eb Gb Bb',9),(75,'Minor','F Minor','F Ab C',9),(76,'Minor','Gb Major','Gb Bb Db',9),(77,'Minor','Ab Major','Ab C Eb',9);
 INSERT INTO `keyChords` VALUES (78,'Seventh','Bb Maj7','B D F A',9),(79,'Seventh','Cm7','C Eb G Bb',9),(80,'Seventh','Dm7','D F A C',9),(81,'Seventh','Eb Maj7','Eb G Bb D',9),(82,'Seventh','F7','F A C Eb',9),(83,'Seventh','Gm7','G Bb D F',9),(84,'Seventh','Am7♭5','A C Eb G',9);
+
+INSERT INTO `keyChords` VALUES (85,'Triads','C# Major','C# D F',7),(86,'Triads','C# Minor','C# Db F',7),(87,'Triads','C# Diminished','C# Db Fb',7),(88,'Triad','C# Augmented','C# D F#',7),(89,'Common','C# sus2','C# C F',7),(90,'Common','C# sus4','C# E F',7),(91,'Common','C#6','C# D G',7);
+INSERT INTO `keyChords` VALUES (92,'Major','C# Major','C# D F',7),(93,'Major','C# Minor','C# Eb G',7),(94,'Major','C# Minor','C# F A',7),(95,'Major','C# Major','C# G Bb',7),(96,'Major','C# Major','C# A C',7),(97,'Major','C# Minor','C# Bb D',7),(98,'Major','C# Diminished','C# C Eb',7);
+INSERT INTO `keyChords` VALUES (99,'Minor','C# Minor','C# Db F',7),(100,'Minor','C# Diminished','C# Eb Gb',7),(101,'Minor','C# Major','C# F Ab',7),(102,'Minor','C# Minor','C# Gb Bb',7),(103,'Minor','C#Minor','C# Ab C',7),(104,'Minor','C# Major','C# Bb Db',7),(105,'Minor','C# Major','C# C Eb',7);
+INSERT INTO `keyChords` VALUES (106,'Seventh','C# Maj7','C# D F A',7),(107,'Seventh','C#m7','C# Eb G Bb',7),(108,'Seventh','C#m7','C# F A C',7),(109,'Seventh','C# Maj7','Eb G Bb D',7),(110,'Seventh','C#7','C# A C Eb',7),(111,'Seventh','C#m7','C# Bb D F',7),(112,'Seventh','C#7♭5','C# C Eb G',7);
 /*!40000 ALTER TABLE `keyChords` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -215,6 +224,8 @@ LOCK TABLES `songs` WRITE;
 INSERT INTO `songs` VALUES (1,'Jump','Van Halen', 1),(2,'Like A Rolling Stone','Bob Dylan',1),(3,'Let it Be', 'The Beatles',1),(4,'Tiny Dancer','Elton John',1),(5,'Halleluluah', 'Leonard Cohen',1);
 INSERT INTO `songs` VALUES (6,'Wish You Were Here', 'Pink Floyd', 2),(7,'Come As You Are','Nirvana',2),(8,'Sweet Home Alabama', 'Lynyrd Skynyrd',2),(9,'Good Riddance','Green Day',2),(10,'Blackbird', 'The Beatles',2);
 INSERT INTO `songs` VALUES (11,'Rocket Man','Elton John',9),(12,'Johnny B. Goode','Chuck Berry',9),(13,'Purple Rain', 'Prince',9),(14,'Teenage Dream','Katy Perry',9),(15,'Spiderwebs', 'No Doubt',9);
+INSERT INTO `songs` VALUES (16,'Chandelier','Sia',7),(17,'Never Gonna Give You Up','Rick Astley',7),(18,'When the Party\'s Over', 'Billie Eilish',7),(19,'Mr. Brightside','The Killers',7),(20,'Gimme Shelter', 'The Rolling Stones',7);
+
 /*!40000 ALTER TABLE `songs` ENABLE KEYS */;
 UNLOCK TABLES;
 

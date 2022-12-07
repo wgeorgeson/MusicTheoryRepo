@@ -26,7 +26,7 @@ class SongDaoTest {
     @Test
     void getAllSongs() {
         songs = songDao.getAllSongs();
-        assertEquals(15, songs.size());
+        assertEquals(20, songs.size());
     }
 
     @Test
@@ -43,7 +43,7 @@ class SongDaoTest {
 
     @Test
     void getSongsByKey() {
-        songs = songDao.getSongsByKey("G");
+        songs = songDao.getSongsByKey("C#");
         assertEquals(5, songs.size());
     }
 }

@@ -1,5 +1,5 @@
 <!-- Nav 2 - User signed in -->
-<div class="navbar">
+<div class="navbar border border-dark">
     <a href="index.jsp">Home</a>
     <a href="addUserScalesChords">Add Scales/Chords</a>
     <a href="viewUserScalesChords">View Scales/Chords</a>
