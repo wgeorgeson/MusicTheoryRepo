@@ -31,10 +31,6 @@ public class ViewKeyResults extends HttpServlet {
         List<KeyChord> keyChords = keyChordDao.getKeyChordsByKeyName(chosenKey);
         List<Song> songs = songDao.getSongsByKey(chosenKey);
 
-        System.out.println("Chosen key: " + chosenKey + ", Scales: " + keyScales);
-        System.out.println("Chosen key: " + chosenKey + ", Chords: " + keyChords);
-        System.out.println("Chosen key: " + chosenKey + ", Songs: " + songs);
-
         request.setAttribute("chosenKey", chosenKey);
         request.setAttribute("scales", keyScales);
         request.setAttribute("chords", keyChords);
