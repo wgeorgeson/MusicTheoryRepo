@@ -2,6 +2,7 @@ package com.mtr.persistence;
 
 import com.mtr.entity.UserChord;
 
+import com.mtr.entity.UserScale;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,10 +10,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import java.util.List;
 
 /**
@@ -77,6 +75,31 @@ public class UserChordDao {
         UserChord userChord = session.get(UserChord.class, id);
         session.close();
         return userChord;
+    }
+
+    /**
+     * Gets a List of userChords for a User by the user's username.
+     *
+     * @param userName the user's username
+     * @return the List of userChords for the user
+     */
+    public List<UserChord> getUserChordsByUsername(String userName) {
+        /*
+            SELECT * FROM userScales
+            WHERE userScales.userId = user.userId
+            AND user.user_name = userName
+        */
+        logger.debug("Searching for a list of userChords for : {}", userName);
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<UserChord> query = builder.createQuery(UserChord.class);
+        Root<UserChord> root = query.from(UserChord.class);
+        Path<UserChord> propertyPath = root.get("user");
+        query.where(builder.and(
+                builder.equal(propertyPath.get("userName"), userName)));
+        List<UserChord> userChords = session.createQuery(query).getResultList();
+        session.close();
+        return userChords;
     }
 
     /**

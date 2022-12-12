@@ -84,6 +84,27 @@ public class UserDao {
     }
 
     /**
+     * Gets users by last name.
+     *
+     * @param username the user's username
+     * @return the user by username
+     */
+    public User getUserByUserName(String username) {
+        logger.debug("Searching for a user with the username of: {}", username);
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery(User.class);
+        Root<User> root = query.from(User.class);
+        // Think of the following two stmts as the sql WHERE portion of your query
+        Expression<String> propertyPath = root.get("userName");
+        query.where(builder.like(propertyPath, "%" + username + "%"));
+        // List<User> user = session.createQuery(query).getResultList();
+        User user = (User) session.createQuery(query).getSingleResult();
+        session.close();
+        return user;
+    }
+
+    /**
      * update user
      *
      * @param user User to be inserted or updated

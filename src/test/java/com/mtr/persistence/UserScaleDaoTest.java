@@ -53,6 +53,18 @@ class UserScaleDaoTest {
     }
 
     /**
+     * Verifies that the userScales with the specified username are returned
+     */
+    @Test
+    void getUserScalesByUsernameSuccess() {
+        UserDao userDao = new UserDao();
+        User user = userDao.getUserById(1);
+        String userName = user.getUserName();
+        List<UserScale> userScales = userScaleDao.getUserScalesByUsername(userName);
+        assertEquals( 3, userScales.size());
+    }
+
+    /**
      * Verifies that the userScale with a specific id is returned
      */
     @Test

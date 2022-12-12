@@ -18,11 +18,6 @@
 --
 -- Table structure for table `users`
 --
-
-DROP TABLE IF EXISTS `users`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
 create table users
                (
                  user_id int(5) NOT NULL auto_increment
@@ -39,17 +34,13 @@ create table users
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Mark','Knopfler','markyk@direstraits.com','evh1','secret1'),(2,'Eric','Clapton','eclapton@aol.com','eclapton','secret2'),(3,'Jimmy','Page','jimpage@hotmail.com','jpage44','secret3');
+INSERT INTO `users` VALUES (1,'Mark','Knopfler','markyk@direstraits.com','markyK','secret1'),(2,'Eric','Clapton','eclapton@aol.com','eclapton','secret2'),(3,'Jimmy','Page','jimpage@hotmail.com','jpage44','secret3'),(4,'Billy','Gibbons','realBillyG@hotmail.com','gibbons47','secret4');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
              
 --
 -- Table structure for table `keysMusic`
 --
-DROP TABLE IF EXISTS `keysMusic`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
 create table keysMusic
                (
                  key_id int(2) NOT NULL
@@ -69,10 +60,6 @@ UNLOCK TABLES;
 --
 -- Table structure for table `keyScales`
 --
-DROP TABLE IF EXISTS `keyScales`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-             
 create table keyScales
                (
                  scale_id int(4) NOT NULL auto_increment
@@ -108,10 +95,6 @@ UNLOCK TABLES;
 --
 -- Table structure for table `keyChords`
 --
-DROP TABLE IF EXISTS `keyChords`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-             
 create table keyChords
                (
                  chord_id int(4) NOT NULL auto_increment
@@ -152,10 +135,6 @@ UNLOCK TABLES;
 --
 -- Table structure for table `userScales`
 --
-DROP TABLE IF EXISTS `userScales`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
 create table userScales
                (
                  user_scale_id int(4) NOT NULL auto_increment
@@ -178,10 +157,6 @@ UNLOCK TABLES;
 --
 -- Table structure for table `userChords`
 --
-DROP TABLE IF EXISTS `userChords`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
 create table userChords
                (
                  user_chord_id int(4) NOT NULL auto_increment
@@ -204,10 +179,6 @@ UNLOCK TABLES;
 
 -- Table structure for table `songs`
 --
-DROP TABLE IF EXISTS `songs`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
 create table songs
                (
                  song_id int(4) NOT NULL auto_increment
@@ -221,10 +192,10 @@ create table songs
                
 LOCK TABLES `songs` WRITE;
 /*!40000 ALTER TABLE `songs` DISABLE KEYS */;
-INSERT INTO `songs` VALUES (1,'Jump','Van Halen', 1),(2,'Like A Rolling Stone','Bob Dylan',1),(3,'Let it Be', 'The Beatles',1),(4,'Tiny Dancer','Elton John',1),(5,'Halleluluah', 'Leonard Cohen',1);
-INSERT INTO `songs` VALUES (6,'Wish You Were Here', 'Pink Floyd', 2),(7,'Come As You Are','Nirvana',2),(8,'Sweet Home Alabama', 'Lynyrd Skynyrd',2),(9,'Good Riddance','Green Day',2),(10,'Blackbird', 'The Beatles',2);
-INSERT INTO `songs` VALUES (11,'Rocket Man','Elton John',9),(12,'Johnny B. Goode','Chuck Berry',9),(13,'Purple Rain', 'Prince',9),(14,'Teenage Dream','Katy Perry',9),(15,'Spiderwebs', 'No Doubt',9);
-INSERT INTO `songs` VALUES (16,'Chandelier','Sia',7),(17,'Never Gonna Give You Up','Rick Astley',7),(18,'When the Party\'s Over', 'Billie Eilish',7),(19,'Mr. Brightside','The Killers',7),(20,'Gimme Shelter', 'The Rolling Stones',7);
+INSERT INTO `songs` VALUES (1,'Jump','Van Halen','7N3PAbqfTjSEU1edb2tY8j',1),(2,'Like A Rolling Stone','Bob Dylan','',1),(3,'Let it Be', 'The Beatles','',1),(4,'Tiny Dancer','Elton John','',1),(5,'Halleluluah', 'Leonard Cohen','',1);
+INSERT INTO `songs` VALUES (6,'Wish You Were Here', 'Pink Floyd', '6mFkJmJqdDVQ1REhVfGgd1',2),(7,'Come As You Are','Nirvana','',2),(8,'Sweet Home Alabama', 'Lynyrd Skynyrd','',2),(9,'Good Riddance','Green Day','',2),(10,'Blackbird', 'The Beatles','',2);
+INSERT INTO `songs` VALUES (11,'Rocket Man','Elton John','2s1sdSqGcKxpPr5lCl7jAV',9),(12,'Johnny B. Goode','Chuck Berry','',9),(13,'Purple Rain', 'Prince','',9),(14,'Teenage Dream','Katy Perry','',9),(15,'Spiderwebs', 'No Doubt','',9);
+INSERT INTO `songs` VALUES (16,'Chandelier','Sia','3gdewACMIVMEWVbyb8O9sY',7),(17,'Never Gonna Give You Up','Rick Astley','',7),(18,'When the Party\'s Over', 'Billie Eilish','',7),(19,'Mr. Brightside','The Killers','',7),(20,'Gimme Shelter', 'The Rolling Stones','',7);
 
 /*!40000 ALTER TABLE `songs` ENABLE KEYS */;
 UNLOCK TABLES;

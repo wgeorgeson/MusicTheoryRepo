@@ -65,3 +65,10 @@
 | 12/5/22 | Implementation of index JSP and keyResultsJSP, as well as the ViewKeyResults servlet.  | 10 | |
 | 12/6/22 | Continued implementation of index JSP and keyResultsJSP, as well as the ViewKeyResults servlet.  | 10.5 | |
 | 12/6/22 | HTML/Bootstrap layout for addUserScalesChords JSP.  | 13 | |
+| 12/7/22 | Indie Project possible API integration with Spotify and YouTube.  | 7.5 | |
+| 12/8/22 | Indie Project work - Integrated JokeAPI code, embedded Spotify snippets, deployed to AWS Beanstalk  | 8.5 | |
+| 12/9/22 | Github issue with large file.  Solved at the expense of erasing previous 3 days work.  | 3.5 | |
+| 12/10/22 | Indie Project - created a functional JSP/Servlet for adding user scales and chords.  | 5.5 | |
+| 12/10/22 | Indie Project - creating two Servlets and a JSP for displaying and deleting user scales and chords.  | 4.5 | |
+| 12/11/22 |   |  | |
+| 12/12/22 |   |  | |

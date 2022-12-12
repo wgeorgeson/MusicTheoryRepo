@@ -62,6 +62,19 @@ class UserDaoTest {
     }
 
     /**
+     * Verifies that the correct User is returned by username
+     */
+    @Test
+    void getUserScalesByUsernameSuccess() {
+        UserDao userDao = new UserDao();
+        User retrievedUser = userDao.getUserById(1);
+        String userName = retrievedUser.getUserName();
+
+        User user = userDao.getUserByUserName(userName);
+        assertEquals( userName, user.getUserName());
+    }
+
+    /**
      * Verify successful update of a User
      */
     @Test

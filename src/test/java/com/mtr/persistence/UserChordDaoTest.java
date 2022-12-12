@@ -2,6 +2,7 @@ package com.mtr.persistence;
 
 import com.mtr.entity.User;
 import com.mtr.entity.UserChord;
+import com.mtr.entity.UserScale;
 import com.mtr.test.util.Database;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -65,6 +66,18 @@ class UserChordDaoTest {
     }
 
     /**
+     * Verifies that the userChords with the specified username are returned
+     */
+    @Test
+    void getUserChordsByUsernameSuccess() {
+        UserDao userDao = new UserDao();
+        User user = userDao.getUserById(1);
+        String userName = user.getUserName();
+        List<UserChord> userChords = userChordDao.getUserChordsByUsername(userName);
+        assertEquals( 4, userChords.size());
+    }
+
+    /**
      * Verifies that a userChord is updated
      */
     @Test
@@ -92,7 +105,7 @@ class UserChordDaoTest {
         User user = userDao.getUserById(2);
 
         // create a new UserChord for the user
-        UserChord newUserChord = new UserChord("Users", "Dmaj13", "D B C# F#", user);
+        UserChord newUserChord = new UserChord("User", "Dmaj13", "D B C# F#", user);
 
         // add the new UserChord to the User's UserChords Set
         user.addUserChord(newUserChord);

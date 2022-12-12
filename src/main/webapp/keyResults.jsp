@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                <h3 style="margin-left: 56px;">You have picked the key of ${chosenKey}</h3>
+                <h3 style="margin-left: 150px;">You have picked the key of ${chosenKey}</h3>
                 <p style="font-weight:bold; font-size: 1.33em;">Keys:
                     <button type="submit" name="key" value="Ab" class="btn btn-success">A&#9837;</button>
                     <button type="submit" name="key" value="A" class="btn btn-success">A</button>
@@ -159,7 +159,7 @@
                                 </span>
                             </p>
                         </td>
-                        <td>API song video/audio here</td>
+                        <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/${songs.get(0).getSongSpotifyId()}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
                     </tr>
                     <tr>
                         <td style="padding: 9px;">

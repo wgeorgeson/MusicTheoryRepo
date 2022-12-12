@@ -20,6 +20,6 @@
 <!-- Banner -->
 <div class="container-fluid p-2 bg-warning text-black text-center border border-dark">
     <h1>Music Theory Repository</h1>
-    <p>Your basic music theory resource</p>
+    <p style="font-weight: bold; font-style: italic;">Your basic music theory resource</p>
 </div>
 

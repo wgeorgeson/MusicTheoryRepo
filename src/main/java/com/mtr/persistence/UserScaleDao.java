@@ -1,5 +1,7 @@
 package com.mtr.persistence;
 
+import com.mtr.entity.KeysMusic;
+import com.mtr.entity.Song;
 import com.mtr.entity.UserScale;
 
 import org.apache.logging.log4j.LogManager;
@@ -9,10 +11,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import java.util.List;
 
 /**
@@ -63,18 +62,43 @@ public class UserScaleDao {
     }
 
     /**
-     * Gets a userScale by id.
+     * Gets a List of userScales for a User by the user's username.
      *
-     * @param id the userScale id
-     * @return the userScale by id
+     * @param userName the user's username
+     * @return the List of userScales for the user
      */
-    public UserScale getUserScaleById(int id) {
+    public List<UserScale> getUserScalesByUsername(String userName) {
         /*
-        *  The creators of Hibernate built search by Id capabilities into the framework, so we don't have
-        *  to do as much coding here
+            SELECT * FROM userScales
+            WHERE userScales.userId = user.userId
+            AND user.user_name = userName
         */
+        logger.debug("Searching for a list of userScales for : {}", userName);
         Session session = sessionFactory.openSession();
-        UserScale userScale = session.get(UserScale.class, id);
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<UserScale> query = builder.createQuery(UserScale.class);
+        Root<UserScale> root = query.from(UserScale.class);
+        Path<UserScale> propertyPath = root.get("user");
+        query.where(builder.and(
+                builder.equal(propertyPath.get("userName"), userName)));
+        List<UserScale> userScales = session.createQuery(query).getResultList();
+        session.close();
+        return userScales;
+    }
+
+    /**
+     * Gets a userScale by userScale id.
+     *
+     * @param userScaleId the userScale id
+     * @return the userScale
+     */
+    public UserScale getUserScaleById(int userScaleId) {
+        /*
+         *  The creators of Hibernate built search by Id capabilities into the framework, so we don't have
+         *  to do as much coding here
+         */
+        Session session = sessionFactory.openSession();
+        UserScale userScale = session.get(UserScale.class, userScaleId);
         session.close();
         return userScale;
     }

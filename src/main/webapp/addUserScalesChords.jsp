@@ -8,7 +8,7 @@
         <div class="col-sm-3"></div>
 
         <div class="col-sm-6">
-            <form action="addUserScalesChords" method="post">
+            <form action="addUserScalesChords" method="post" class="needs-validation" novalidate>
                 <div class="row">
                     <h2>Add Your Own Scale or Chord</h2>
                 </div>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-5 form-group">
                     <div class="col">
                         <div class="mb-3 mr-1 fw-bold">
                             <label for="name" class="form-label">Scale/Chord Name</label>
@@ -37,11 +37,12 @@
                     </div>
                     <div class="col">
                         <div class="mb-5">
-                                <input type="text" class="form-control" id="name" name="addName">
+                                <input type="text" class="form-control" id="name" name="addName" pattern="[A-Ga-g]{1}[\sA-Za-z\d♭♯b#+]*" required>
+                                <div class="invalid-feedback">Please add a valid scale or chord name.</div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row form-group">
                     <div class="col">
                         <div class="mb-3 mr-1 fw-bold">
                             <label for="notes" class="form-label">Scale/Chord Notes</label>
@@ -49,13 +50,18 @@
                     </div>
                     <div class="col">
                         <div class="mb-5">
-                            <input type="text" class="form-control" id="notes" name="addNotes">
+                            <input type="text" class="form-control" id="notes" name="addNotes" pattern="[A-Ga-g]{1}[\sA-Za-z♭♯b#,-]*" required>
+                            <div class="invalid-feedback">Please include valid notes for your scale/chord.</div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-success p-4 fw-bold">Submit</button>
+                        <button type="submit" name="searchType" value="View All Users" class="btn btn-success p-4 fw-bold">Submit</button>
+                    </div>
+                    <div class="col text-danger fw-bold">
+                        <h3>${userConfirmAddition}</h3>
+                        <c:set var="userConfirmAddition" value="" scope="session" />
                     </div>
                 </div>
             </form>

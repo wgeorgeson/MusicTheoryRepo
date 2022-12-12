@@ -22,6 +22,9 @@ public class Song {
     @Column(name = "song_artist")
     private String songArtist;
 
+    @Column(name = "song_spotifyId")
+    private String songSpotifyId;
+
     @ManyToOne
     @JoinColumn(name="key_id", nullable=false)
     // Hibernate will map this KeysMusic object to the key_id field in the songs table
@@ -73,6 +76,13 @@ public class Song {
         this.songArtist = songArtist;
     }
 
+    public String getSongSpotifyId() {
+        return songSpotifyId;
+    }
+
+    public void setSongSpotifyId(String songSpotifyId) {
+        this.songSpotifyId = songSpotifyId;
+    }
     /**
      * Gets a keysMusic object.
      *
