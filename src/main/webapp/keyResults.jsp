@@ -3,8 +3,7 @@
 <%@include file="header.jsp"%>
 <%@include file="navMenu1.jsp"%>
 
-<!-- Page content -->
-<div class="container mt-3 mb-1 .text-center my-auto">
+f<div class="container mt-3 mb-1 .text-center my-auto">
     <form style="margin: 0px;" action="viewKeyResults" method="GET">
         <div class="row">
             <div class="col-sm-2"></div>
@@ -17,13 +16,13 @@
                     <button type="submit" name="key" value="B" class="btn btn-success">B</button>
                     <button type="submit" name="key" value="Cb" class="btn btn-success">C&#9837;</button>
                     <button type="submit" name="key" value="C" class="btn btn-success">C</button>
-                    <button type="submit" name="key" value="C#" class="btn btn-success">C#</button>
+                    <button type="submit" name="key" value="C#" class="btn btn-success">C&#9839;</button>
                     <button type="submit" name="key" value="Db" class="btn btn-success">D&#9837;</button>
                     <button type="submit" name="key" value="D" class="btn btn-success">D</button>
                     <button type="submit" name="key" value="Eb" class="btn btn-success">E&#9837;</button>
                     <button type="submit" name="key" value="E" class="btn btn-success">E</button>
                     <button type="submit" name="key" value="F" class="btn btn-success">F</button>
-                    <button type="submit" name="key" value="F#" class="btn btn-success">F#</button>
+                    <button type="submit" name="key" value="F#" class="btn btn-success">F&#9839;</button>
                     <button type="submit" name="key" value="Gb" class="btn btn-success">G&#9837;</button>
                     <button type="submit" name="key" value="G" class="btn btn-success">G</button>
                 </p>
@@ -223,7 +222,7 @@
                 </table>
                 <h5 style="margin-top: 16px;">Is there a scale or chord you're not seeing that you would like to add?</h5>
                 <p>
-                    <button type="submit" class="btn btn-info">Yes, I would like to add my own scales and chords</button>
+                    <a href="addUserScalesChords.jsp" class="button">Yes, I would like to add my own scales and chords</a>
                 </p>
                 <p style="font-size: 12px;">As a registered user, only you will see your added scales and chords</p>
             </div>

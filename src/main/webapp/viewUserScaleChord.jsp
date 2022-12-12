@@ -8,7 +8,7 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <h2>${username}'s Scales and Chords</h2>
-            <form action="removeUserScalesChords" method="post"></form>
+            <form action="removeUserScalesChords" method="post">
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-4 text-center">
@@ -32,7 +32,7 @@
                                                             <p style="font-weight: bold; margin-top: 0px;">${userScale.scaleData}</p>
                                                         </td>
                                                         <td>
-                                                            <button type="button" name="deleteBtn" value="scale_${userScale.scaleName}"
+                                                            <button type="submit" name="deleteBtn" value="scale_${userScale.scaleName}"
                                                                     class="btn btn-danger ml-1 fw-bold border border-dark" >
                                                                 Delete
                                                             </button>
@@ -66,7 +66,7 @@
                                                             <p style="font-weight: bold; margin-top: 0px;">${userChord.chordData}</p>
                                                         </td>
                                                         <td>
-                                                            <button type="button" name="deleteBtn" value="scale_${userChord.chordName}"
+                                                            <button type="submit" name="deleteBtn" value="chord_${userChord.chordName}"
                                                                     class="btn btn-danger ml-1 fw-bold border border-dark" >
                                                                 Delete
                                                             </button>
@@ -78,10 +78,10 @@
                                         </c:choose>
                                     </table>
                             </fieldset>
-                        /div>
+                        </div>
                     <div class="col-md-2"></div>
                 </div>
-            </div>
+            </form>
         <div class="col-md-2"></div>
     </div>
 </div>

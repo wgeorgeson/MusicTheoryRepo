@@ -15,8 +15,15 @@ import com.mtr.persistence.UserScaleDao;
 @WebServlet(name = "addUserScalesChords", urlPatterns = "/addUserScalesChords")
 
 public class AddUserScalesChords extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        runRequest(request, response);
+    }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        runRequest(request, response);
+    }
+
+    private void runRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     // If user is signed in
             String scaleOrChord = request.getParameter("addType");
             String scaleOrChordName = request.getParameter("addName");
@@ -25,7 +32,7 @@ public class AddUserScalesChords extends HttpServlet {
             // use the user's username to get the User
             // then get the user's id from the User object
             UserDao userDao = new UserDao();
-            User user = userDao.getUserById(3);
+            User user = userDao.getUserById(1);
 
             if (scaleOrChord.equals("scale")) {
                 UserScale userScale = new UserScale(scaleOrChordName, scaleOrChordNotes, user);

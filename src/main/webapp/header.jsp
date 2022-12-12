@@ -23,3 +23,8 @@
     <p style="font-weight: bold; font-style: italic;">Your basic music theory resource</p>
 </div>
 
+<!-- Include nav menus here when User authentication is implemented -->
+<!-- If username NOT in the session map -->
+    <!-- display nav1 -->
+<!-- If username in the session map (user is signed in) -->
+    <!-- display nav2 -->

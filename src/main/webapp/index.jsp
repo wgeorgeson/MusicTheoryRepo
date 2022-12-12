@@ -21,8 +21,8 @@
                     <button type="submit" name="key" value="A" class="btn btn-success btn-lg  p-4 fw-bold fs-3 keyButtons">A</button>
                     <button type="submit" name="key" value="E" class="btn btn-success btn-lg  p-4 fw-bold fs-3 keyButtons">E</button>
                     <button type="submit" name="key" value="B" class="btn btn-success btn-lg  p-4 fw-bold fs-3 keyButtons">B</button>
-                    <button type="submit" name="key" value="C#" class="btn btn-success btn-lg  p-4 fw-bold fs-3 keyButtons">C#</button>
-                    <button type="submit" name="key" value="F#" class="btn btn-success btn-lg  p-4 fw-bold fs-3 keyButtons">F#</button>
+                    <button type="submit" name="key" value="C#" class="btn btn-success btn-lg  p-4 fw-bold fs-3 keyButtons">C&#9839;</button>
+                    <button type="submit" name="key" value="F#" class="btn btn-success btn-lg  p-4 fw-bold fs-3 keyButtons">F&#9839;</button>
                 </div>
                 <div style="padding: 1.1em;">
                     <button type="submit" name="key" value="Bb" class="btn btn-success btn-lg p-4  fw-bold fs-3 keyButtons">B&#9837;</button>

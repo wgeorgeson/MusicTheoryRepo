@@ -13,9 +13,9 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "RemoveUserScalesChords", value = "/removeUserScalesChords")
-public class RemoveUserScalesChords extends HttpServlet {
+@WebServlet(name = "removeUserScalesChords", value = "/removeUserScalesChords")
 
+public class RemoveUserScalesChords extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -38,7 +38,7 @@ public class RemoveUserScalesChords extends HttpServlet {
         */
 
         // temporary using hardcoded username
-        User user = userDao.getUserByUserName("markyK");  // gibbons47
+        User user = userDao.getUserByUserName("markyK");
         int userId = user.getUserId();
 
         // if the first token is "scale"
@@ -59,12 +59,14 @@ public class RemoveUserScalesChords extends HttpServlet {
                     userScaleDao.delete(scale);
                 }
             }
-        } else { // (values[0].equals("chord"))
+        } else if (values[0].equals("chord")) {
             // use the other token to get the name of the chord
             String chordName = values[1];
 
             // call UserChordDao's getUserChordsByName() sending the chord name.  A list of userChords will be returned.
             List<UserChord> userChords = userChordDao.getUserChordsByName(chordName);
+
+            System.out.println("The UserChords: " + userChords);
 
             // loop through the list of scales
             for (UserChord chord : userChords) {
@@ -78,17 +80,18 @@ public class RemoveUserScalesChords extends HttpServlet {
             }
         }
 
+        HttpSession session = request.getSession();
         // get the list of userScales in the DB for current user, using the user's username
         List<UserScale> userScaleList = userScaleDao.getUserScalesByUsername(user.getUserName());
         // add the list of userScales to the session map
-        request.setAttribute("userScales", userScaleList);
+        session.setAttribute("userScales", userScaleList);
 
         // get the list of userChords in the DB for current user, using the user's username
         List<UserChord> userChordList = userChordDao.getUserChordsByUsername(user.getUserName());
         // add the list of userChords to the session map
-        request.setAttribute("userChords", userChordList);
+        session.setAttribute("userChords", userChordList);
 
-        request.setAttribute("userConfirmDeletion", "Your scale/chord has been removed.");
+        session.setAttribute("userConfirmDeletion", "Your " + values[0] + " has been removed.");
         String url = "./viewUserScaleChord.jsp";
         response.sendRedirect(url);
     }

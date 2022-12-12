@@ -8,7 +8,7 @@
     <div class="col-sm-4"></div>
 
     <div class="col-sm-4">
-        <h2>Log In</h2>
+        <h2>Create an Account</h2>
 
     </div>
 

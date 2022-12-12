@@ -34,13 +34,13 @@ public class ViewUserScalesChords extends HttpServlet {
 
             // Get a list of the user's userScales using the username from the session
             UserScaleDao userScaleDao = new UserScaleDao();
-            List<UserScale> userScaleList = userScaleDao.getUserScalesByUsername("markyK"); // userScaleDao.getUserScalesByUsername(username)   gibbons47
+            List<UserScale> userScaleList = userScaleDao.getUserScalesByUsername("markyK"); // userScaleDao.getUserScalesByUsername(username)
             // add the list of userScales to the request map
             req.setAttribute("userScales", userScaleList);
 
             // match the userid with the userids in the userChords table.  Get a list of the user's userChords
             UserChordDao userChordDao = new UserChordDao();
-            List<UserChord> userChordList = userChordDao.getUserChordsByUsername("markyK"); // userScaleDao.getUserScalesByUsername(username)  gibbons47
+            List<UserChord> userChordList = userChordDao.getUserChordsByUsername("markyK"); // userScaleDao.getUserScalesByUsername(username)
             // add the list of userChords to the request map
             req.setAttribute("userChords", userChordList);
 

@@ -101,12 +101,6 @@ public class KeyChordDao {
                 builder.equal(propertyPath.get("keyName"), keyName)));
         List<KeyChord> keyChords = session.createQuery(query).getResultList();
         session.close();
-
-        /*
-        for (KeyChord keyChord: keyChords) {
-            logger.info(keyChord + "\n");
-        } */
-
         return keyChords;
     }
 
