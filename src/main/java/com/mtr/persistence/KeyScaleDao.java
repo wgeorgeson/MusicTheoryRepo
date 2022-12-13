@@ -80,10 +80,6 @@ public class KeyScaleDao {
         List<KeyScale> keyScales = session.createQuery(query).getResultList();
         session.close();
 
-        /* for (KeyScale keyScale: keyScales) {
-            logger.info(keyScale + "\n");
-        } */
-
         return keyScales;
     }
 

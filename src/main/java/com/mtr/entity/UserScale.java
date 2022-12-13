@@ -121,6 +121,11 @@ public class UserScale {
         this.user = user;
     }
 
+    /**
+     * A printable UserScale object.
+     *
+     * @return a UserScale object in a String format
+     */
     @Override
     public String toString() {
         return "UserChord{" +
@@ -132,6 +137,12 @@ public class UserScale {
     }
 
     @Override
+    /**
+     * Overridden method that determines if two UserScales are equal.
+     *
+     * @param o
+     * @return boolean
+     */
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -146,6 +157,12 @@ public class UserScale {
     }
 
     @Override
+    /**
+     * Overridden method computes the hash values of given input objects
+     * Used in conjunction with equals()
+     *
+     * @return a hashcode int
+     */
     public int hashCode() {
         return Objects.hash(user_scale_id, scaleName, scaleData);
         // return Objects.hash(id, description);

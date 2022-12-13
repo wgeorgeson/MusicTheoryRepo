@@ -40,11 +40,10 @@
 *    [ ] Select Template | Design CSS - Bootstrap
 *    [ ] Navigation Bars, Include statements
 *    [ ] index.jsp & Servlet
-*    [ ] index.jsp Servlet
 *    [ ] viewKeyResults JSP & Servlet
 *    [ ] addUserScalesChords JSP & Servlet
 *    [ ] viewUserScalesChords JSP & Servlet
-*    [ ] Peer Review
+*    [ ] removeUserScalesChords Servlet
 *    [ ] LogIn JSP & Servlet
 *    [ ] SignIn JSP & Servlet
 *    [ ] changePassword JSP & Servlet
@@ -52,17 +51,18 @@
 *    [ ] Begin Checkpoint 3
 *    [ ] Deploy to AWS Beanstalk
 *    [ ] Cognito authentication
-*    [ ] Form Validation - Javascript
-*    [ ] Incorporate API data into viewKeyResults jsp
+*    [ ] Form Validation - Bootstrap 5
+*    [ ] Incorporate API data
 *    [ ] Ensure that proper Navigation is displayed for each page
-*    [ ] Finish loading all data into production DB
+*    [ ] Peer Review
 
 ### Week 16
+*    [ ] Finish loading all data into production DB
 *    [ ] Code quality check
 *    [ ] Add any missing JavaDocs/Documentation
 *	 [ ] Final Presentation
 *	 [ ] Create video, add video link to readme.md
 *    [ ] Self-evaluation
-*	 [ ] Weekly journal entry
 *    [ ] Finalize all project documentation
 *    [ ] Update Project Plan and timeLog 
+*    [ ] Project Reflection

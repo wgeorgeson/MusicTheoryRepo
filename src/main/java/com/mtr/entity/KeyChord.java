@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 /**
  * The type KeyChord
+ *
+ * @author Bill Georgeson
  */
 @Entity(name = "KeyChord")
 @Table(name = "keyChords")
@@ -42,9 +44,10 @@ public class KeyChord {
     /**
      * Instantiates a new KeyChord object.  Constructor w/ args.
      *
-     * @param chordName     the chordName
-     * @param chordData     the chordData
-     * @param keysMusic     the KeysMusic object
+     * @param category  the category
+     * @param chordName the chordName
+     * @param chordData the chordData
+     * @param keysMusic the KeysMusic object
      */
     public KeyChord(String category, String chordName, String chordData, KeysMusic keysMusic) {
         this.category = category;
@@ -53,34 +56,74 @@ public class KeyChord {
         this.keysMusic = keysMusic;
     }
 
+    /**
+     * Gets chord id.
+     *
+     * @return the chord id
+     */
     public int getChord_id() {
         return chord_id;
     }
 
+    /**
+     * Sets chord id.
+     *
+     * @param chord_id the chord id
+     */
     public void setChord_id(int chord_id) {
         this.chord_id = chord_id;
     }
 
+    /**
+     * Gets category.
+     *
+     * @return the category
+     */
     public String getCategory() {
         return category;
     }
 
+    /**
+     * Sets category.
+     *
+     * @param category the category
+     */
     public void setCategory(String category) {
         this.category = category;
     }
 
+    /**
+     * Gets chord name.
+     *
+     * @return the chord name
+     */
     public String getChordName() {
         return chordName;
     }
 
+    /**
+     * Sets chord name.
+     *
+     * @param chordName the chord name
+     */
     public void setChordName(String chordName) {
         this.chordName = chordName;
     }
 
+    /**
+     * Gets chord data.
+     *
+     * @return the chord data
+     */
     public String getChordData() {
         return chordData;
     }
 
+    /**
+     * Sets chord data.
+     *
+     * @param chordData the chord data
+     */
     public void setChordData(String chordData) {
         this.chordData = chordData;
     }

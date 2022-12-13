@@ -18,6 +18,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigInteger;
@@ -43,7 +44,7 @@ import java.util.stream.Collectors;
 @WebServlet(
         urlPatterns = {"/auth"}
 )
-// TODO if something goes wrong it this process, route to an error page. Currently, errors are only caught and logged.
+
 /**
  * Inspired by: https://stackoverflow.com/questions/52144721/how-to-get-access-token-using-client-credentials-using-java-code
  */
@@ -64,15 +65,17 @@ public class Auth extends HttpServlet implements PropertiesLoader {
     @Override
     /**
      *  init() is run with every execution of our app because within IntelliJ we are continually
-     *  re-deploying our app to Tomcat.  Everything in init() runs before doGet().
+     *  re-deploying our app to Tomcat.
      *  In a production environment this probably isn't what would happen.
      *  This servlet would be deployed once and take multiple requests, meaning init() would
      *  run one time when the first request comes in, and then not run for all the subsequent requests
      *  coming in to this servlet.
+     *
+     *  Everything in init() runs before doGet() even processes the request
      */
     public void init() throws ServletException {
         super.init();
-        loadProperties();
+        loadProperties();  // gets stuff out of cognito.properties file
         loadKey();
     }
 
@@ -96,7 +99,8 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             try {
                 TokenResponse tokenResponse = getToken(authRequest);
                 userName = validate(tokenResponse);
-                req.setAttribute("userName", userName);
+                HttpSession session = req.getSession();
+                session.setAttribute("userName", userName);
             } catch (IOException e) {
                 logger.error("Error getting or validating the token: " + e.getMessage(), e);
                 //TODO forward to an error page
@@ -246,8 +250,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
      * Read in the cognito props file and get/set the client id, secret, and required urls
      * for authenticating a user.
      */
-    // TODO This code appears in a couple classes, consider using a startup servlet similar to adv java project
-    private void loadProperties() {
+    private void loadProperties() {   // Overloaded method
         try {
             properties = loadProperties("/cognito.properties");
             CLIENT_ID = properties.getProperty("client.id");

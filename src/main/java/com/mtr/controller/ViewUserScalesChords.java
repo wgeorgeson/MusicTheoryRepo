@@ -1,10 +1,8 @@
 package com.mtr.controller;
 
-import com.mtr.entity.User;
 import com.mtr.entity.UserChord;
 import com.mtr.entity.UserScale;
 import com.mtr.persistence.UserChordDao;
-import com.mtr.persistence.UserDao;
 import com.mtr.persistence.UserScaleDao;
 
 import javax.servlet.*;
@@ -13,34 +11,29 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The type View user scales chords.
+ */
 @WebServlet(name = "viewUserScalesChords", urlPatterns = "/viewUserScalesChords")
 
 public class ViewUserScalesChords extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        runRequest(request, response);
-    }
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        runRequest(request, response);
-    }
+        HttpSession session = req.getSession();
 
-    private void runRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // IF USER IS LOGGED IN
-
-            /* UNCOMMENT THE NEXT LINE WHEN LOGIN FUNCTIONALITY WORKING */
-            // String username = session.getAttribute("username");
+        // check if user is logged in
+        if (session.getAttribute("userName") != null) {
+            String username = (String) session.getAttribute("userName");
 
             // Get a list of the user's userScales using the username from the session
             UserScaleDao userScaleDao = new UserScaleDao();
-            List<UserScale> userScaleList = userScaleDao.getUserScalesByUsername("markyK"); // userScaleDao.getUserScalesByUsername(username)
+            List<UserScale> userScaleList = userScaleDao.getUserScalesByUsername(username); // userScaleDao.getUserScalesByUsername(username)
             // add the list of userScales to the request map
             req.setAttribute("userScales", userScaleList);
 
             // match the userid with the userids in the userChords table.  Get a list of the user's userChords
             UserChordDao userChordDao = new UserChordDao();
-            List<UserChord> userChordList = userChordDao.getUserChordsByUsername("markyK"); // userScaleDao.getUserScalesByUsername(username)
+            List<UserChord> userChordList = userChordDao.getUserChordsByUsername(username); // userScaleDao.getUserScalesByUsername(username)
             // add the list of userChords to the request map
             req.setAttribute("userChords", userChordList);
 
@@ -48,12 +41,13 @@ public class ViewUserScalesChords extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, resp);
 
-        /* ELSE
-               session.setAttribute("unregisteredUser", "You must be a registered user to access this page.");
+        } else {
+            session.setAttribute("unregisteredView", "You must be signed in to view your own scales " +
+                    "and chords.");
 
-               String url = "Login page";
-               RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-               dispatcher.forward(req, resp);
-        */
+            String url = "/requestUserLogInView.jsp";
+            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+            dispatcher.forward(req, resp);
+        }
     }
 }

@@ -13,11 +13,16 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The type Remove user scales chords.
+ */
 @WebServlet(name = "removeUserScalesChords", value = "/removeUserScalesChords")
 
 public class RemoveUserScalesChords extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        HttpSession session = request.getSession();
 
         UserDao userDao = new UserDao();
         UserScaleDao userScaleDao = new UserScaleDao();
@@ -31,14 +36,9 @@ public class RemoveUserScalesChords extends HttpServlet {
         */
         String[] values = deleteBtnValue.split("_");
 
-        /* get the userId of the user from the username in the session
-        String username = session.getAttribute("username");
+        // get the userId of the user from the username in the session
+        String username = (String) session.getAttribute("userName");
         User user = userDao.getUserByUserName(username);
-        int userId = user.getUserId();
-        */
-
-        // temporary using hardcoded username
-        User user = userDao.getUserByUserName("markyK");
         int userId = user.getUserId();
 
         // if the first token is "scale"
@@ -80,7 +80,6 @@ public class RemoveUserScalesChords extends HttpServlet {
             }
         }
 
-        HttpSession session = request.getSession();
         // get the list of userScales in the DB for current user, using the user's username
         List<UserScale> userScaleList = userScaleDao.getUserScalesByUsername(user.getUserName());
         // add the list of userScales to the session map
@@ -91,7 +90,7 @@ public class RemoveUserScalesChords extends HttpServlet {
         // add the list of userChords to the session map
         session.setAttribute("userChords", userChordList);
 
-        session.setAttribute("userConfirmDeletion", "Your " + values[0] + " has been removed.");
+        session.setAttribute("userConfirmDeletion", "Your " + values[0] + " has been removed from our records.");
         String url = "./viewUserScaleChord.jsp";
         response.sendRedirect(url);
     }

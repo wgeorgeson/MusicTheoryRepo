@@ -16,6 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
+/**
+ * The type View key results.
+ */
 @WebServlet(name = "viewKeyResults", urlPatterns = "/viewKeyResults")
 
 public class ViewKeyResults extends HttpServlet {

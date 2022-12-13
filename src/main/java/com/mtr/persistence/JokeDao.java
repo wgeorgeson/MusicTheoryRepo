@@ -18,11 +18,19 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * The type Joke dao.
+ */
 public class JokeDao implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     Properties properties = null;
 
+    /**
+     * Gets a joke object that is developed from returned JSON from a Joke API.
+     *
+     * @return the joke
+     */
     public Joke getJoke() {
         Client client = ClientBuilder.newClient();
 

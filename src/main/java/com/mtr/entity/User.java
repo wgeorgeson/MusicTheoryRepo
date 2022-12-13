@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * A class to represent a user.
  *
- * @author pwaite
+ * @author Bill Georgeson
  */
 @Entity(name = "User")
 @Table(name = "users")
@@ -202,7 +202,7 @@ public class User {
      *
      * @param userScale the userScale
      */
-    public void addUserScale(UserScale userScale) {
+     public void addUserScale(UserScale userScale) {
         userScales.add(userScale);
         userScale.setUser(this);
     }

@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 /**
  * The type KeyScale
+ *
+ * @author Bill Georgeson
  */
 @Entity(name = "KeyScale")
 @Table(name = "keyScales")
@@ -30,7 +32,7 @@ public class KeyScale {
 
     /**
      * Instantiates a new KeyScale object.
-     *
+     * <p>
      * No-arg constructor.
      */
     public KeyScale() {
@@ -40,9 +42,9 @@ public class KeyScale {
     /**
      * Instantiates a new KeyScale object.  Constructor w/ args.
      *
-     * @param scaleName     the scaleName
-     * @param scaleData     the scaleData
-     * @param keysMusic     the keysMusic object
+     * @param scaleName the scaleName
+     * @param scaleData the scaleData
+     * @param keysMusic the keysMusic object
      */
     public KeyScale(String scaleName, String scaleData, KeysMusic keysMusic) {
         this.scaleName = scaleName;
@@ -50,26 +52,56 @@ public class KeyScale {
         this.keysMusic = keysMusic;
     }
 
+    /**
+     * Gets scale id.
+     *
+     * @return the scale id
+     */
     public int getScale_id() {
         return scale_id;
     }
 
+    /**
+     * Sets scale id.
+     *
+     * @param scale_id the scale id
+     */
     public void setScale_id(int scale_id) {
         this.scale_id = scale_id;
     }
 
+    /**
+     * Gets scale name.
+     *
+     * @return the scale name
+     */
     public String getScaleName() {
         return scaleName;
     }
 
+    /**
+     * Sets scale name.
+     *
+     * @param scaleName the scale name
+     */
     public void setScaleName(String scaleName) {
         this.scaleName = scaleName;
     }
 
+    /**
+     * Gets scale data.
+     *
+     * @return the scale data
+     */
     public String getScaleData() {
         return scaleData;
     }
 
+    /**
+     * Sets scale data.
+     *
+     * @param scaleData the scale data
+     */
     public void setScaleData(String scaleData) {
         this.scaleData = scaleData;
     }

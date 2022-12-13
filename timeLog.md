@@ -70,5 +70,7 @@
 | 12/9/22 | Github issue with large file.  Solved at the expense of erasing previous 3 days work.  | 3.5 | |
 | 12/10/22 | Indie Project - created a functional JSP/Servlet for adding user scales and chords.  | 5.5 | |
 | 12/10/22 | Indie Project - creating two Servlets and a JSP for displaying and deleting user scales and chords.  | 4.5 | |
-| 12/11/22 |   |  | |
-| 12/12/22 |   |  | |
+| 12/11/22 | Indie Project - worked on user adding, displaying, deleting scales/chords.  HTML and Bootstrap maintenance on JSPs | 10.5 | |
+| 12/12/22 | Indie Project - Added Cognito authentication for local environment only.  Add error pages for user sign in.   | 5 | |
+| 12/12/22 | Indie Project - User functionality  | 5 | |
+| 12/12/22 | Finishing touches on Indie Project.  Final Presentation. | 8 | |

@@ -40,7 +40,7 @@ class UserChordDaoTest {
         List<UserChord> userChords = userChordDao.getAllUserChords();
         // We want to know the number of userChords that should be returned
         // Double-click on test_MusicTheoryRepo->tables->userChords in Database pane to view the no. of userChords in userChords table
-        assertEquals(10, userChords.size());
+        assertEquals(15, userChords.size());
     }
 
     /**
@@ -50,7 +50,7 @@ class UserChordDaoTest {
     @Test
     void getUserChordsByNameSuccess() {
         List<UserChord> userChords = userChordDao.getUserChordsByName("E");  // any userChords with an E
-        assertEquals( 3, userChords.size());
+        assertEquals( 4, userChords.size());
     }
 
     /**
@@ -74,7 +74,7 @@ class UserChordDaoTest {
         User user = userDao.getUserById(1);
         String userName = user.getUserName();
         List<UserChord> userChords = userChordDao.getUserChordsByUsername(userName);
-        assertEquals( 4, userChords.size());
+        assertEquals( 5, userChords.size());
     }
 
     /**

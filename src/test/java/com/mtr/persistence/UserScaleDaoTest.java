@@ -39,7 +39,7 @@ class UserScaleDaoTest {
         List<UserScale> userScales = userScaleDao.getAllUserScales();
         // We want to know the number of userScales that should be returned
         // Double-click on test_MusicTheoryRepo->tables->userScaless in Database pane to view the no. of userScales in userScales table
-        assertEquals(10, userScales.size());
+        assertEquals(15, userScales.size());
     }
 
     /**
@@ -61,7 +61,7 @@ class UserScaleDaoTest {
         User user = userDao.getUserById(1);
         String userName = user.getUserName();
         List<UserScale> userScales = userScaleDao.getUserScalesByUsername(userName);
-        assertEquals( 3, userScales.size());
+        assertEquals( 4, userScales.size());
     }
 
     /**

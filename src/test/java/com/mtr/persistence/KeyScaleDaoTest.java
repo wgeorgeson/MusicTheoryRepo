@@ -21,6 +21,10 @@ class KeyScaleDaoTest {
     KeyScaleDao keyScaleDao;
 
     @BeforeEach
+    /**
+     * Sets up testing by this test class by deleting and rewriting
+     * the DB.  Instantiates a KeyScaleDao object.
+     */
     void setUp() {
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -29,19 +33,28 @@ class KeyScaleDaoTest {
     }
 
     @Test
+    /**
+     * Gets all key scales.
+     */
     void getAllKeyScalesSuccess() {
         List<KeyScale> keyScales = keyScaleDao.getAllKeyScales();
         // We want to know the number of keyScales that should be returned
         // Double-click on test_MusicTheoryRepo->tables->keyScales in Database pane to view the no. of keyScales in keyScales table
-        assertEquals(56, keyScales.size());
+        assertEquals(70, keyScales.size());
     }
 
+    /**
+     * Gets key scales by name.
+     */
     @Test
     void getKeyScalesByNameSuccess() {
         List<KeyScale> keyScales = keyScaleDao.getKeyScalesByName("Dorian");
-        assertEquals( 4, keyScales.size());
+        assertEquals( 5, keyScales.size());
     }
 
+    /**
+     * Gets key scales by key name.
+     */
     @Test
     void getKeyScalesByKeyNameSuccess() {
         List<KeyScale> keyScales = keyScaleDao.getKeyScalesByKeyName("Bb");

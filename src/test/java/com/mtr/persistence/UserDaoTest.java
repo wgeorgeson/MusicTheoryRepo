@@ -19,6 +19,10 @@ class UserDaoTest {
     UserDao dao;
 
     @BeforeEach
+    /**
+     * Sets up testing by this test class by deleting and rewriting
+     * to the DB.  Instantiates a UserDao object.
+     */
     void setUp() {
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -35,7 +39,7 @@ class UserDaoTest {
         List<User> users = dao.getAllUsers();
         // We want to know the number of users that should be returned
         // Double-click on test_MusicTheoryRepo->tables->users in Database pane to view the no. of users in user table
-        assertEquals(3, users.size());
+        assertEquals(4, users.size());
     }
 
     /**

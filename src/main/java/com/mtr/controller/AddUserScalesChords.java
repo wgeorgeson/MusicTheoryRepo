@@ -12,19 +12,20 @@ import com.mtr.persistence.UserChordDao;
 import com.mtr.persistence.UserDao;
 import com.mtr.persistence.UserScaleDao;
 
+/**
+ * The type Add user scales chords.
+ */
 @WebServlet(name = "addUserScalesChords", urlPatterns = "/addUserScalesChords")
 
 public class AddUserScalesChords extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        runRequest(request, response);
-    }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        runRequest(request, response);
-    }
+        HttpSession session = request.getSession();
 
-    private void runRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    // If user is signed in
+        if (session.getAttribute("userName") != null)  // user is logged in
+        {
+            String username = (String) session.getAttribute("userName");
+
             String scaleOrChord = request.getParameter("addType");
             String scaleOrChordName = request.getParameter("addName");
             String scaleOrChordNotes = request.getParameter("addNotes");
@@ -32,7 +33,7 @@ public class AddUserScalesChords extends HttpServlet {
             // use the user's username to get the User
             // then get the user's id from the User object
             UserDao userDao = new UserDao();
-            User user = userDao.getUserById(1);
+            User user = userDao.getUserByUserName(username);
 
             if (scaleOrChord.equals("scale")) {
                 UserScale userScale = new UserScale(scaleOrChordName, scaleOrChordNotes, user);
@@ -44,17 +45,18 @@ public class AddUserScalesChords extends HttpServlet {
                 userChordDao.insert(userChord);
             }
 
-            HttpSession session = request.getSession();
-
             session.setAttribute("userConfirmAddition", "Your new " + scaleOrChord + " has been added.");
+            session.setAttribute("linkToView", "View my added scales/chords.");
             String url = "./addUserScalesChords.jsp";
             response.sendRedirect(url);
-    /* else
-           session.setAttribute("unregisteredUser", "You must be a registered user to access this page.");
 
-           String url = "Login page";
-           RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-           dispatcher.forward(req, resp);
-     */
+        } else {  // user not logged in
+            session.setAttribute("unregisteredAdd", "You must be a registered user to add your own scales " +
+                    "and chords to our records.");
+
+            String url = "/requestUserLogInAdd.jsp";
+            RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+        }
     }
 }

@@ -7,6 +7,8 @@ import java.util.Objects;
 
 /**
  * The type UserChord.
+ *
+ * @author Bill Georgeson
  */
 @Entity(name = "UserChord")
 @Table(name = "userChords")
@@ -142,6 +144,11 @@ public class UserChord {
         this.user = user;
     }
 
+    /**
+     * A printable UserChord object.
+     *
+     * @return a UserChord object in a String format
+     */
     @Override
     public String toString() {
         return "UserChord{" +
@@ -154,6 +161,12 @@ public class UserChord {
     }
 
 
+    /**
+     * Overridden method that determines if two UserChords are equal.
+     *
+     * @param o
+     * @return boolean
+     */
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -164,6 +177,12 @@ public class UserChord {
                 && chordData.equals(userChord.chordData);
     }
 
+    /**
+     * Overridden method computes the hash values of given input objects
+     * Used in conjunction with equals()
+     *
+     * @return a hashcode int
+     */
     @Override
     public int hashCode() {
         return Objects.hash(user_chord_id, chordCategory, chordName, chordData);

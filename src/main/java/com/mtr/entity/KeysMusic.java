@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * A class to represent a user.
  *
- * @author pwaite
+ * @author Bill Georgeson
  */
 @Entity(name = "KeysMusic")  // the name of this class
 @Table(name = "keysMusic")  // the name of the table this class maps to
@@ -34,7 +34,7 @@ public class KeysMusic {
 
     /**
      * Instantiates a new KeysMusic object
-     *
+     * <p>
      * Constructor. No-args.
      */
     public KeysMusic() {
@@ -86,26 +86,56 @@ public class KeysMusic {
         this.keyName = keyName;
     }
 
+    /**
+     * Gets key scales.
+     *
+     * @return the key scales
+     */
     public Set<KeyScale> getKeyScales() {
         return keyScales;
     }
 
+    /**
+     * Sets key scales.
+     *
+     * @param keyScales the key scales
+     */
     public void setKeyScales(Set<KeyScale> keyScales) {
         this.keyScales = keyScales;
     }
 
+    /**
+     * Gets key chords.
+     *
+     * @return the key chords
+     */
     public Set<KeyChord> getKeyChords() {
         return keyChords;
     }
 
+    /**
+     * Sets key chords.
+     *
+     * @param keyChords the key chords
+     */
     public void setKeyChords(Set<KeyChord> keyChords) {
         this.keyChords = keyChords;
     }
 
+    /**
+     * Gets songs.
+     *
+     * @return the songs
+     */
     public Set<Song> getSongs() {
         return songs;
     }
 
+    /**
+     * Sets songs.
+     *
+     * @param songs the songs
+     */
     public void setSongs(Set<Song> songs) {
         this.songs = songs;
     }

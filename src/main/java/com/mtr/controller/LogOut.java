@@ -10,11 +10,10 @@ import java.io.IOException;
 public class LogOut extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
 
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        session.removeAttribute("userName");
+        String url = "./index.jsp";
+        response.sendRedirect(url);
     }
 }

@@ -1,6 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.7.21, for Linux (x86_64)
 --
 -- Host: 127.0.0.1    Database: MusicTheoryRepo
+--
+-- Far less data in this SQL file to use for testing purposes.
 -- ------------------------------------------------------
 -- Server version	5.7.21-0ubuntu0.16.04.1
 
@@ -39,7 +41,7 @@ create table users
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Mark','Knopfler','wgeorgeson@madisoncollege.edu','markyK','secret1'),(2,'Eric','Clapton','wgeorgeson@madisoncollege.edu','eclapton','secret1'),(3,'Jimmy','Page','wgeorgeson@madisoncollege.edu','jimmyP44','secret1'),(4,'Billy','Gibbons','wgeorgeson@madisoncollege.edu','bgibbons','secret1');
+INSERT INTO `users` VALUES (1,'Mark','Knopfler','wgeorgeson@madisoncollege.edu','markyK','secret1'),(2,'Eric','Clapton','wgeorgeson@madisoncollege.edu','eclapton','secret1'),(3,'Jimmy','Page','wgeorgeson@madisoncollege.edu','jimmyP44','secret1');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -98,13 +100,9 @@ INSERT INTO `keyScales` VALUES (29,'Bb Major (Bb Ionian)', 'Bb C D Eb F G A', 9)
 INSERT INTO `keyScales` VALUES (34,'Bb Aeolian', 'Bb C Db Eb F Gb Ab', 9),(35,'Bb Locrian','Bb Cb Db Eb Fb Gb Ab',9),(36,'Bb Minor', 'Bb C Db Eb F Gb Ab',9),(37,'Bb Harmonic Minor','Bb C Db Eb F Gb Ab',9),(38,'Bb Melodic Minor', 'Bb C Db Eb F Gb Ab',9);
 INSERT INTO `keyScales` VALUES (39,'Bb Major Pentatonic', 'Bb C D F G', 9),(40,'Bb Blues Scale','Bb C Db D F G', 9),(41,'Bb Minor Pentatonic', 'Bb Db Eb F Ab',9),(42,'Relative Minor','G A Bb C D Eb F',9);
 
-INSERT INTO `keyScales` VALUES (43,'C# Major (C# Ionian)', 'C# C D Eb F G A', 7),(44,'C# Dorian','Bb C Db Eb F G Ab',7),(45,'#C Phrygian', 'C# Cb Db Eb F Gb Ab',7),(46,'C# Lydian','C# C D E F G A',7),(47,'C# Mixolydian', 'C# C D Eb F G Ab',7);
+INSERT INTO `keyScales` VALUES (43,'C# Major (Bb Ionian)', 'C# C D Eb F G A', 7),(44,'C# Dorian','Bb C Db Eb F G Ab',7),(45,'#C Phrygian', 'Bb Cb Db Eb F Gb Ab',7),(46,'C# Lydian','Bb C D E F G A',7),(47,'C# Mixolydian', 'C# C D Eb F G Ab',7);
 INSERT INTO `keyScales` VALUES (48,'C# Aeolian', 'C# C Db Eb F Gb Ab', 7),(49,'C# Locrian','C# Cb Db Eb Fb Gb Ab',7),(50,'C# Minor', 'C# C Db Eb F Gb Ab',7),(51,'C# Harmonic Minor','C# C Db Eb F Gb Ab',7),(52,'C# Melodic Minor', 'C# C Db Eb F Gb Ab',7);
 INSERT INTO `keyScales` VALUES (53,'C# Major Pentatonic', 'C# C D F G', 7),(54,'C# Blues Scale','C# C Db D F G', 7),(55,'C# Minor Pentatonic', 'C# Db Eb F Ab',7),(56,'Relative Minor','C# A Bb C D Eb F',7);
-
-INSERT INTO `keyScales` VALUES (57,'D Major (D Ionian)', 'D E F# G A B C#', 3),(58,'D Dorian','D C Db Eb F G Ab',3),(59,'D Phrygian', 'D Cb Db Eb F Gb Ab',3),(60,'D Lydian','D C D E F G A',3),(61,'D Mixolydian', 'D C D Eb F G Ab',3);
-INSERT INTO `keyScales` VALUES (62,'D Aeolian', 'D C Db Eb F Gb Ab', 3),(63,'D Locrian','D Cb Db Eb Fb Gb Ab',7),(64,'D Minor', 'D C Db Eb F Gb Ab',3),(65,'D Harmonic Minor','D C Db Eb F Gb Ab',3),(66,'D Melodic Minor', 'D C Db Eb F Gb Ab',3);
-INSERT INTO `keyScales` VALUES (67,'D Major Pentatonic', 'D C D F G', 3),(68,'D Blues Scale','D C Db D F G', 3),(69,'D Minor Pentatonic', 'D Db Eb F Ab',3),(70,'Relative Minor','B C# D E F# G A',3);
 /*!40000 ALTER TABLE `keyScales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -149,11 +147,6 @@ INSERT INTO `keyChords` VALUES (85,'Triads','C# Major','C# D F',7),(86,'Triads',
 INSERT INTO `keyChords` VALUES (92,'Major','C# Major','C# D F',7),(93,'Major','C# Minor','C# Eb G',7),(94,'Major','C# Minor','C# F A',7),(95,'Major','C# Major','C# G Bb',7),(96,'Major','C# Major','C# A C',7),(97,'Major','C# Minor','C# Bb D',7),(98,'Major','C# Diminished','C# C Eb',7);
 INSERT INTO `keyChords` VALUES (99,'Minor','C# Minor','C# Db F',7),(100,'Minor','C# Diminished','C# Eb Gb',7),(101,'Minor','C# Major','C# F Ab',7),(102,'Minor','C# Minor','C# Gb Bb',7),(103,'Minor','C#Minor','C# Ab C',7),(104,'Minor','C# Major','C# Bb Db',7),(105,'Minor','C# Major','C# C Eb',7);
 INSERT INTO `keyChords` VALUES (106,'Seventh','C# Maj7','C# D F A',7),(107,'Seventh','C#m7','C# Eb G Bb',7),(108,'Seventh','C#m7','C# F A C',7),(109,'Seventh','C# Maj7','Eb G Bb D',7),(110,'Seventh','C#7','C# A C Eb',7),(111,'Seventh','C#m7','C# Bb D F',7),(112,'Seventh','C#7b5','C# C Eb G',7);
-
-INSERT INTO `keyChords` VALUES (113,'Triads','D Major','D F# A',3),(114,'Triads','D Minor','D F A',3),(115,'Triads','D Diminished','D F Ab',3),(116,'Triad','D Augmented','D F# A#',3),(117,'Common','D sus2','D E A',3),(118,'Common','D sus4','D G A',3),(119,'Common','D6','D F# B',3);
-INSERT INTO `keyChords` VALUES (120,'Major','D Major','D F# A',3),(121,'Major','E Minor','E Eb G',3),(122,'Major','F# Minor','F# F A',3),(123,'Major','G Major','G G Bb',3),(124,'Major','A Major','A C# F#',3),(125,'Major','B Minor','B D F#',3),(126,'Major','C Diminished','C D# F#',3);
-INSERT INTO `keyChords` VALUES (127,'Minor','D Minor','D Db F',3),(128,'Minor','E Diminished','E Eb Gb',3),(129,'Minor','F Major','F F Ab',3),(130,'Minor','G Minor','G Gb Bb',3),(131,'Minor','A Minor','A Ab C',3),(132,'Minor','Bb Major','Bb Bb Db',3),(133,'Minor','C Major','C C Eb',3);
-INSERT INTO `keyChords` VALUES (134,'Seventh','D Maj7','D F# A C#',3),(135,'Seventh','Em7','E Eb G Bb',3),(136,'Seventh','F#m7','F# F A C',3),(137,'Seventh','G Maj7','G B D F#',3),(138,'Seventh','A7','A A C Eb',3),(139,'Seventh','Bm7','Bb Db F A',3),(140,'Seventh','C#7b5','C# C Eb G',3);
 /*!40000 ALTER TABLE `keyChords` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -180,7 +173,6 @@ LOCK TABLES `userScales` WRITE;
 /*!40000 ALTER TABLE `userScales` DISABLE KEYS */;
 INSERT INTO `userScales` VALUES (1,'D Persian', 'D Eb F# G Ab Bb C#', 1),(2,'B Hungarian Minor','B, C#, D, F, F#, G, A#',3),(3,'F# Arabic', 'F#, G#, A#, B, C, D, E, F#',2),(4,'G Mixolydian Augmented','G, A, B, C, D#, E, F',2),(5,'C Arabic', 'C, D, E, F, Gb Ab, Bb, C',3);
 INSERT INTO `userScales` VALUES (6,'Ab Persian', 'Ab-A-C-Db-D-E-G', 1),(7,'E Diatonic','E – F# – G# – A – B – C# – D# – E',2),(8,'C# Persian', 'C# D F F# G A C',3),(9,'Bb Diatonic','Bb C D Eb F G A Bb',1),(10,'E Hungarian Minor', 'E, F#, G, A#, B, C, D#',2);
-INSERT INTO `userScales` VALUES (11,'F Asian', 'F, Ab, Bb, C, Eb', 4),(12,'C hindu','C D E F G Ab Bb',1),(13,'Db Hungarian major', 'Db - E - F - G - Ab - Bb - Cb',3),(14,'E Spanish Gypsy','E, F, G#, A, B, C, D',4),(15,'C Neopolitan Major', 'C-Db-Eb-F-G-A-B',4);
 /*!40000 ALTER TABLE `userScales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -208,7 +200,6 @@ LOCK TABLES `userChords` WRITE;
 /*!40000 ALTER TABLE `userChords` DISABLE KEYS */;
 INSERT INTO `userChords` VALUES (1,'User','C11(b9)','C G Bb Db F',3),(2,'User','Eb add4','Eb G Ab Bb',1),(3,'User','F13','F-A-Bb-D-Eb',2),(4,'User','F7sus4','F Bb C Eb',2),(5,'User','C#aug7','C# F A B',1);
 INSERT INTO `userChords` VALUES (6,'User','Bb 6/9','Bb D F G C',1),(7,'User','Em9','E G B D F#',3),(8,'User','E9#5','E G# C D F#',2),(9,'User','A maj9','A C# E G# B',3),(10,'User','C9(#5)','G B D# F A',1);
-INSERT INTO `userChords` VALUES (11,'User','F# m6','F# A C# D#',2),(12,'User','Bm11','B D A E',4),(13,'User','Eb9 b5','E-G-A-Db-F',1),(14,'User','D9','D F# A C E',4),(15,'User','F# m13','F# A D# G# B E',4);
 /*!40000 ALTER TABLE `userChords` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -237,7 +228,6 @@ INSERT INTO `songs` VALUES (1,'Jump','Van Halen','7N3PAbqfTjSEU1edb2tY8j',1),(2,
 INSERT INTO `songs` VALUES (6,'Wish You Were Here','Pink Floyd','6mFkJmJqdDVQ1REhVfGgd1',2),(7,'Come As You Are','Nirvana','',2),(8,'Sweet Home Alabama', 'Lynyrd Skynyrd','',2),(9,'Good Riddance','Green Day','',2),(10,'Blackbird', 'The Beatles','',2);
 INSERT INTO `songs` VALUES (11,'Rocket Man','Elton John','3gdewACMIVMEWVbyb8O9sY',9),(12,'Johnny B. Goode','Chuck Berry','',9),(13,'Purple Rain', 'Prince','',9),(14,'Teenage Dream','Katy Perry','',9),(15,'Spiderwebs', 'No Doubt','',9);
 INSERT INTO `songs` VALUES (16,'Chandelier','Sia','2s1sdSqGcKxpPr5lCl7jAV',7),(17,'Never Gonna Give You Up','Rick Astley','',7),(18,'When the Party\'s Over', 'Billie Eilish','',7),(19,'Mr. Brightside','The Killers','',7),(20,'Gimme Shelter', 'The Rolling Stones','',7);
-INSERT INTO `songs` VALUES (21,'Hey There Delilah','Plain White T\'s','4RCWB3V8V0dignt99LZ8vH',3),(22,'Hotel California','The Eagles','',3),(23,'Love Story', 'Taylor Swift','',3),(24,'Everlong','Foo Fighters','',3),(25,'Mamma Mia', 'ABBA','',3);
 
 /*!40000 ALTER TABLE `songs` ENABLE KEYS */;
 UNLOCK TABLES;
