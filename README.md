@@ -45,5 +45,8 @@ For musicians or anyone who has taken up introductory music theory, there are ve
 [Reflection Statements](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/reflections.md)    
 [Timelog](https://github.com/wgeorgeson/MusicTheoryRepo/blob/master/timeLog.md)
 
+[Video Presentation](https://www.youtube.com/watch?v=eW16qeRWJJo)
+
+
 
 
