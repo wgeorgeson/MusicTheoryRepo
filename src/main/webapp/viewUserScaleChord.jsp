@@ -82,16 +82,17 @@
                         </table>
                     <div class="col-md-1"></div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12 text-success fw-bold text-center">
+                        <h4>${userConfirmDeletion}</h4>
+                        <c:set var="userConfirmDeletion" value="" scope="session" />
+                    </div>
+                </div>
             </form>
         <div class="col-md-2"></div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12 text-info fw-bold text-center ">
-        <h4>${userConfirmDeletion}</h4>
-        <c:set var="userConfirmDeletion" value="" scope="request" />
-    </div>
-</div>
+
 
 <%@include file="footer.jsp"%>

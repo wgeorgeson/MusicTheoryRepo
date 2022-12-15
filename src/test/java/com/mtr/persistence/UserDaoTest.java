@@ -97,14 +97,12 @@ class UserDaoTest {
      */
     @Test
     void insertSuccess() {
-        User newUser = new User("Ace", "Frehley", "aceFrehley@kissband.com", "acesWild","secret4");
+        // using personal email account to retrieve verification code that we have to send to AWS Cognito to verify new user
+        User newUser = new User("Ace", "Frehley", "wgeorgeson@madisoncollege.edu", "acesWild","secret1");
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getUserById(id);
         assertEquals("Ace", insertedUser.getFirstName());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
     }
 
     /**
@@ -112,8 +110,9 @@ class UserDaoTest {
      *  Verify user's new scale has been added to User class' userScales Set
      */
     @Test
-    void insertWithOrderSuccess() {
-        User newUser = new User("John", "Mayer", "jmguitarman@gmail.com", "johnnyM", "secret5");
+    void insertWithScaleSuccess() {
+        // using personal email account to retrieve verification code that we have to send to AWS Cognito to verify new user
+        User newUser = new User("John", "Mayer", "wgeorgeson@madisoncollege.edu", "johnnyM", "secret1");
 
         String scaleName = "F Diatonic";
         String scaleData = "F Gb G Ab A Bb B C Db E F";
@@ -126,9 +125,6 @@ class UserDaoTest {
         User insertedUser = dao.getUserById(id);
         assertEquals("John", insertedUser.getFirstName());
         assertEquals(1, insertedUser.getUserScales().size());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
     }
 
 

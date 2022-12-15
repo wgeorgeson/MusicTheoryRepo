@@ -257,6 +257,11 @@ public class User {
         userChord.setUser(null);
     }
 
+    /**
+     * A printable User object.
+     *
+     * @return a User object in a String format
+     */
     @Override
     public String toString() {
         return "User{" +
@@ -266,6 +271,12 @@ public class User {
                 '}';
     }
 
+    /**
+     * Overridden method that determines if two User objects are equal.
+     *
+     * @param o
+     * @return boolean
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -278,6 +289,12 @@ public class User {
                 && email.equals(user.email);
     }
 
+     /**
+     * Overridden method computes the hash values of given input objects
+     * Used in conjunction with equals()
+     *
+     * @return a hashcode int
+     */
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName, userName, email, user_id);

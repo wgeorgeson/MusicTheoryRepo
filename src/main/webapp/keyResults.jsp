@@ -36,7 +36,7 @@
     <div class="row">
 
         <!-- Scales -->
-        <div class="col-sm-2">
+        <div class="col-md-2">
             <div><h5>${chosenKey} Scales</h5></div>
             <c:forEach var="scale" items="${scales}">
                 <div style="font-size: 12px;">
@@ -47,7 +47,7 @@
         </div>
 
         <!--Chords -->
-        <div class="col-sm-6">
+        <div class="col-md-6">
             <table>
                 <tr>
                     <td colspan="4" ><h5>${chosenKey} Triads</h5></td>
@@ -134,7 +134,7 @@
         </div>
 
         <!-- Songs -->
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h5 class="underline">Songs in the key of ${chosenKey}</h5>
             <table style="margin-top: 0px; font-size: 12px;">
                 <tr>

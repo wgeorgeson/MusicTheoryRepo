@@ -15,19 +15,28 @@
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
 </head>
 
 <body>
 <!-- Banner -->
 <div class="container-fluid p-2 bg-warning text-black text-center border border-dark">
-    <h1>Music Theory Repository</h1>
-    <p style="font-weight: bold; font-style: italic;">Your basic music theory resource</p>
+    <div class="row">
+        <div class="col">
+            <a href="index.jsp"><img src="images/musicImg1.jpeg" alt="Music Image" width="225" height="100"></a>
+        </div>
+        <div class="col">
+            <h1>Music Theory Repository</h1>
+            <p style="font-weight: bold; font-style: italic;">Your basic music theory resource</p>
+        </div>
+        <div class="col"><a href="index.jsp">
+            <a href="index.jsp"><img src="images/musicImg1.jpeg" alt="Music Image" width="225" height="100"></a>
+        </div>
+    </div>
 </div>
 <!-- Choose which nav menu to display based on if a username exists (if it exists it means user is signed in) -->
 <c:choose>
     <c:when test="${empty userName}">
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fw-bold">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fw-bold justify-content-center">
         <div class="container-fluid">
             <a href="index.jsp" class="navbar-brand">MTR</a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

@@ -54,7 +54,7 @@
                             <div class="invalid-feedback">Please include valid notes for your scale/chord.</div>
                             <p style="font-size: 10px;">
                                 Please use a small 'b' for flats.<br />
-                                Please keep notes separated with spaces, commans, or hyphens.
+                                Please keep notes separated with spaces, commas, or hyphens.
                             </p>
 
                         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="submit" name="searchType" value="View All Users" class="btn btn-success p-4 fw-bold">Submit</button>
+                        <button type="submit" name="searchType" value="Add User Music" class="btn btn-success p-4 fw-bold">Submit</button>
                     </div>
                     <div class="col text-success fw-bold ml-5 p-3">
                         <h4>${userConfirmAddition}</h4>
